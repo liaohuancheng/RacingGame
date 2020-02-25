@@ -3,7 +3,9 @@ using CarCommon;
 using ExitGames.Client.Photon;
 using System.Collections;
 using System.Collections.Generic;
+using CarCommon
 using UnityEngine;
+using LitJson;
 
 public class ServerController : ControllerBase
 {
@@ -26,7 +28,11 @@ public class ServerController : ControllerBase
 
     public override void OnOperationResponse(OperationResponse operationResponse)
     {
-        throw new System.NotImplementedException();
+        Dictionary<byte, object> parameters = operationResponse.Parameters;
+        object jsonObject = null;
+        parameters.TryGetValue((byte)ParamaterCode.ServerList, out jsonObject);
+        List<CarCommon.Model.ServerProperty> serverLst = 
+            JsonMapper.ToObject<List<CarCommon.Model.ServerProperty>>(jsonObject.ToString());
     }
 
 }
