@@ -1,0 +1,5 @@
+﻿2020-02-20 22:19:37,395 [1] DEBUG CarServer.CarApplication - Setup Successful
+2020-02-20 22:19:37,425 [1] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-02-20 22:19:54,421 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-02-20 22:19:54,455 [1] DEBUG CarServer.CarApplication - TearDown Successful
+2020-02-20 22:19:54,462 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
