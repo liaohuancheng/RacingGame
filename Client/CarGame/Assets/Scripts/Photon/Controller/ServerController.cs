@@ -1,11 +1,9 @@
 ﻿using Assets.Scripts.Photon.Controller;
 using CarCommon;
 using ExitGames.Client.Photon;
-using System.Collections;
 using System.Collections.Generic;
-using CarCommon
-using UnityEngine;
 using LitJson;
+using UnityEngine;
 
 public class ServerController : ControllerBase
 {
@@ -33,6 +31,10 @@ public class ServerController : ControllerBase
         parameters.TryGetValue((byte)ParamaterCode.ServerList, out jsonObject);
         List<CarCommon.Model.ServerProperty> serverLst = 
             JsonMapper.ToObject<List<CarCommon.Model.ServerProperty>>(jsonObject.ToString());
+        LoginDelegate.Instance.InitServerList(serverLst);
+
+
+
     }
 
 }

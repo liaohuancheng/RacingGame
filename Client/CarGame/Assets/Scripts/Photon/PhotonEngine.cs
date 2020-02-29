@@ -19,10 +19,14 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
     private PhotonPeer peer;
     private bool isConnected = false;
 
-    public static PhotonEngine Instance { get; } = new PhotonEngine();
+    public static PhotonEngine _instance;
 
-    public PhotonEngine()
+    public static PhotonEngine Instance
     {
+        get
+        {
+            return _instance;
+        }
     }
 
     public void RegisterController(OperationCode code, ControllerBase controller)
@@ -42,15 +46,15 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
 
     void Awake()
     {
+        _instance = this;
         peer = new PhotonPeer(this, protocol);
         peer.Connect(serverAddress, applicationName);
-        peer.Service();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isConnected)
+        if (peer != null)
             peer.Service();
     }
 
@@ -68,6 +72,7 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
     {
         ControllerBase controller;
         controllers.TryGetValue(operationResponse.OperationCode, out controller);
+        Debug.Log("opCode:" + operationResponse.OperationCode);
         if (controller != null)
         {
             controller.OnOperationResponse(operationResponse);
