@@ -1,0 +1,740 @@
+﻿2020-03-02 23:55:11,297 [18] DEBUG CarServer.CarApplication - Setup Successful
+2020-03-02 23:55:11,321 [18] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-02 23:55:33,778 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-02 23:55:33,814 [1] DEBUG CarServer.CarApplication - TearDown Successful
+2020-03-02 23:55:33,825 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-02 23:56:07,105 [1] DEBUG CarServer.CarApplication - Setup Successful
+2020-03-02 23:56:07,128 [1] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-02 23:56:32,774 [10] DEBUG CarServer.GameClientPeer - OperationCode:1
+2020-03-02 23:56:33,427 [10] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-02 23:56:33,437 [10] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-02 23:56:33,449 [10] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-02 23:56:33,458 [10] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-02 23:56:33,639 [10] DEBUG NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="CarCommon.Model.ServerProperty, CarCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="serverproperty"><id name="ID" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="id" /><generator class="identity" /></id><property name="IP" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="ip" /></property><property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="name" /></property><property name="Count" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="count" /></property></class></hibernate-mapping>
+2020-03-02 23:56:34,272 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:56:34,328 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-02 23:56:34,388 [10] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: ID -> id, type: Int32
+2020-03-02 23:56:34,425 [10] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: IP -> ip, type: String
+2020-03-02 23:56:34,438 [10] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Name -> name, type: String
+2020-03-02 23:56:34,453 [10] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Count -> count, type: Int32
+2020-03-02 23:56:34,476 [10] DEBUG NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="CarCommon.Model.User, CarCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="user"><id name="ID" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="id" /><generator class="identity" /></id><property name="UserName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="userName" /></property><property name="Password" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="password" /></property></class></hibernate-mapping>
+2020-03-02 23:56:34,491 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:56:34,507 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-02 23:56:34,521 [10] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: ID -> id, type: Int32
+2020-03-02 23:56:34,535 [10] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: UserName -> userName, type: String
+2020-03-02 23:56:34,546 [10] DEBUG NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Password -> password, type: String
+2020-03-02 23:56:34,565 [10] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-02 23:56:34,578 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-02 23:56:34,592 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-02 23:56:34,605 [10] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-02 23:56:34,619 [10] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-02 23:56:34,654 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:56:34,686 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:56:34,782 [10] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-02 23:56:34,792 [10] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-02 23:56:34,803 [10] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-02 23:56:34,817 [10] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-02 23:56:35,033 [10] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-02 23:56:35,043 [10] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-02 23:56:35,055 [10] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-02 23:56:35,066 [10] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-02 23:56:35,076 [10] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-02 23:56:35,088 [10] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-02 23:56:35,100 [10] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-02 23:56:35,114 [10] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-02 23:56:35,127 [10] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-02 23:56:35,138 [10] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-02 23:56:35,149 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-02 23:56:35,159 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-02 23:56:35,172 [10] DEBUG NHibernate.Cfg.SettingsFactory - Wrap result sets: disabled
+2020-03-02 23:56:35,183 [10] DEBUG NHibernate.Cfg.SettingsFactory - Batch versioned data: disabled
+2020-03-02 23:56:35,194 [10] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-02 23:56:35,204 [10] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-02 23:56:35,214 [10] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-02 23:56:35,226 [10] DEBUG NHibernate.Cfg.SettingsFactory - Track session id: enabled
+2020-03-02 23:56:35,268 [10] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-02 23:56:35,279 [10] DEBUG NHibernate.Impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2020-03-02 23:56:35,290 [10] DEBUG NHibernate.Impl.SessionFactoryImpl - instantiating session factory with properties: {'use_reflection_optimizer'='True', 'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'connection.driver_class'='NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'dialect'='NHibernate.Dialect.MySQLDialect, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'hibernate.dialect'='NHibernate.Dialect.MySQLDialect, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'connection.connection_string'='Server=localhost;Database=carserver;User ID=root;Password=qwe5551525'}
+2020-03-02 23:56:35,303 [10] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-03-02 23:56:35,830 [10] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-03-02 23:56:35,862 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:56:35,946 [10] DEBUG NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: CarCommon.Model.ServerProperty
+2020-03-02 23:56:35,979 [10] DEBUG NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:CarCommon.Model.ServerProperty
+2020-03-02 23:56:36,021 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:56:36,033 [10] DEBUG NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: CarCommon.Model.User
+2020-03-02 23:56:36,045 [10] DEBUG NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:CarCommon.Model.User
+2020-03-02 23:56:36,114 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: CarCommon.Model.ServerProperty
+2020-03-02 23:56:36,127 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT id FROM serverproperty WHERE id = ?
+2020-03-02 23:56:36,140 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT serverprop_.id, serverprop_.ip as ip2_0_, serverprop_.name as name3_0_, serverprop_.count as count4_0_ FROM serverproperty serverprop_ WHERE serverprop_.id=?
+2020-03-02 23:56:36,152 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO serverproperty (ip, name, count, id) VALUES (?, ?, ?, ?)
+2020-03-02 23:56:36,169 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE serverproperty SET ip = ?, name = ?, count = ? WHERE id = ?
+2020-03-02 23:56:36,185 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM serverproperty WHERE id = ?
+2020-03-02 23:56:36,203 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO serverproperty (ip, name, count) VALUES (?, ?, ?)
+2020-03-02 23:56:36,277 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.ServerProperty: SELECT serverprop0_.id as id1_0_0_, serverprop0_.ip as ip2_0_0_, serverprop0_.name as name3_0_0_, serverprop0_.count as count4_0_0_ FROM serverproperty serverprop0_ WHERE serverprop0_.id=?
+2020-03-02 23:56:36,288 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.ServerProperty: SELECT serverprop0_.id as id1_0_0_, serverprop0_.ip as ip2_0_0_, serverprop0_.name as name3_0_0_, serverprop0_.count as count4_0_0_ FROM serverproperty serverprop0_ WHERE serverprop0_.id=?
+2020-03-02 23:56:36,298 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.ServerProperty: SELECT serverprop0_.id as id1_0_0_, serverprop0_.ip as ip2_0_0_, serverprop0_.name as name3_0_0_, serverprop0_.count as count4_0_0_ FROM serverproperty serverprop0_ WHERE serverprop0_.id=? for update
+2020-03-02 23:56:36,309 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.ServerProperty: SELECT serverprop0_.id as id1_0_0_, serverprop0_.ip as ip2_0_0_, serverprop0_.name as name3_0_0_, serverprop0_.count as count4_0_0_ FROM serverproperty serverprop0_ WHERE serverprop0_.id=? for update
+2020-03-02 23:56:36,320 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.ServerProperty: SELECT serverprop0_.id as id1_0_0_, serverprop0_.ip as ip2_0_0_, serverprop0_.name as name3_0_0_, serverprop0_.count as count4_0_0_ FROM serverproperty serverprop0_ WHERE serverprop0_.id=? for update
+2020-03-02 23:56:36,333 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity CarCommon.Model.ServerProperty: SELECT serverprop0_.id as id1_0_0_, serverprop0_.ip as ip2_0_0_, serverprop0_.name as name3_0_0_, serverprop0_.count as count4_0_0_ FROM serverproperty serverprop0_ WHERE serverprop0_.id=?
+2020-03-02 23:56:36,343 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity CarCommon.Model.ServerProperty: SELECT serverprop0_.id as id1_0_0_, serverprop0_.ip as ip2_0_0_, serverprop0_.name as name3_0_0_, serverprop0_.count as count4_0_0_ FROM serverproperty serverprop0_ WHERE serverprop0_.id=?
+2020-03-02 23:56:36,355 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: CarCommon.Model.User
+2020-03-02 23:56:36,365 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT id FROM user WHERE id = ?
+2020-03-02 23:56:36,376 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT user_.id, user_.userName as username2_1_, user_.password as password3_1_ FROM user user_ WHERE user_.id=?
+2020-03-02 23:56:36,387 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO user (userName, password, id) VALUES (?, ?, ?)
+2020-03-02 23:56:36,397 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE user SET userName = ?, password = ? WHERE id = ?
+2020-03-02 23:56:36,407 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM user WHERE id = ?
+2020-03-02 23:56:36,418 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO user (userName, password) VALUES (?, ?)
+2020-03-02 23:56:36,431 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.User: SELECT user0_.id as id1_1_0_, user0_.userName as username2_1_0_, user0_.password as password3_1_0_ FROM user user0_ WHERE user0_.id=?
+2020-03-02 23:56:36,443 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.User: SELECT user0_.id as id1_1_0_, user0_.userName as username2_1_0_, user0_.password as password3_1_0_ FROM user user0_ WHERE user0_.id=?
+2020-03-02 23:56:36,454 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.User: SELECT user0_.id as id1_1_0_, user0_.userName as username2_1_0_, user0_.password as password3_1_0_ FROM user user0_ WHERE user0_.id=? for update
+2020-03-02 23:56:36,464 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.User: SELECT user0_.id as id1_1_0_, user0_.userName as username2_1_0_, user0_.password as password3_1_0_ FROM user user0_ WHERE user0_.id=? for update
+2020-03-02 23:56:36,476 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CarCommon.Model.User: SELECT user0_.id as id1_1_0_, user0_.userName as username2_1_0_, user0_.password as password3_1_0_ FROM user user0_ WHERE user0_.id=? for update
+2020-03-02 23:56:36,487 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity CarCommon.Model.User: SELECT user0_.id as id1_1_0_, user0_.userName as username2_1_0_, user0_.password as password3_1_0_ FROM user user0_ WHERE user0_.id=?
+2020-03-02 23:56:36,498 [10] DEBUG NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity CarCommon.Model.User: SELECT user0_.id as id1_1_0_, user0_.userName as username2_1_0_, user0_.password as password3_1_0_ FROM user user0_ WHERE user0_.id=?
+2020-03-02 23:56:36,511 [10] DEBUG NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+2020-03-02 23:56:36,524 [10] DEBUG NHibernate.Impl.SessionFactoryObjectFactory - registered: 4eb69b6ea5284f3fb2c19d1228f5bb9f(unnamed)
+2020-03-02 23:56:36,536 [10] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-02 23:56:36,547 [10] DEBUG NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+2020-03-02 23:56:36,564 [10] DEBUG NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+2020-03-02 23:56:36,574 [10] DEBUG NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+2020-03-02 23:56:36,589 [10] DEBUG NHibernate.Impl.SessionFactoryImpl+SessionBuilderImpl`1[[NHibernate.ISessionBuilder, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4]] - Opening Hibernate Session.
+2020-03-02 23:56:36,612 [10] DEBUG NHibernate.Impl.SessionImpl - [session-id=81aaff20-2a84-4b82-a1b7-a544f560f472] opened session at timestamp: 637187901966, for session factory: [/4eb69b6ea5284f3fb2c19d1228f5bb9f]
+2020-03-02 23:56:36,629 [10] DEBUG NHibernate.Transaction.AdoTransaction - Begin (Unspecified)
+2020-03-02 23:56:36,640 [10] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-03-02 23:56:36,668 [10] DEBUG NHibernate.Transaction.AdoTransaction - Start Commit
+2020-03-02 23:56:36,680 [10] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2020-03-02 23:56:36,698 [10] DEBUG NHibernate.Transaction.AdoTransaction - DbTransaction Committed
+2020-03-02 23:56:36,713 [10] DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-03-02 23:56:36,723 [10] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-03-02 23:56:36,739 [10] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2020-03-02 23:56:36,756 [10] DEBUG NHibernate.Transaction.AdoTransaction - DbTransaction disposed.
+2020-03-02 23:56:36,786 [10] DEBUG NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+2020-03-02 23:56:36,853 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-03-02 23:56:36,863 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT this_.id as id1_0_0_, this_.ip as ip2_0_0_, this_.name as name3_0_0_, this_.count as count4_0_0_ FROM serverproperty this_
+2020-03-02 23:56:36,882 [10] DEBUG NHibernate.SQL - SELECT this_.id as id1_0_0_, this_.ip as ip2_0_0_, this_.name as name3_0_0_, this_.count as count4_0_0_ FROM serverproperty this_
+2020-03-02 23:56:36,891 [10] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-03-02 23:56:36,906 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-03-02 23:56:36,918 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-03-02 23:56:36,932 [10] DEBUG NHibernate.Loader.Loader - processing result set
+2020-03-02 23:56:36,945 [10] DEBUG NHibernate.Loader.Loader - result set row: 0
+2020-03-02 23:56:36,959 [10] DEBUG NHibernate.Type.Int32Type - returning '1' as column: id1_0_0_
+2020-03-02 23:56:36,974 [10] DEBUG NHibernate.Loader.Loader - result row: EntityKey[CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:36,991 [10] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:37,102 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:37,114 [10] DEBUG NHibernate.Type.StringType - returning '127.0.0.1' as column: ip2_0_0_
+2020-03-02 23:56:37,125 [10] DEBUG NHibernate.Type.StringType - returning '火树银花' as column: name3_0_0_
+2020-03-02 23:56:37,137 [10] DEBUG NHibernate.Type.Int32Type - returning '10' as column: count4_0_0_
+2020-03-02 23:56:37,153 [10] DEBUG NHibernate.Loader.Loader - result set row: 1
+2020-03-02 23:56:37,163 [10] DEBUG NHibernate.Type.Int32Type - returning '2' as column: id1_0_0_
+2020-03-02 23:56:37,176 [10] DEBUG NHibernate.Loader.Loader - result row: EntityKey[CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:37,188 [10] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:37,200 [10] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:37,210 [10] DEBUG NHibernate.Type.StringType - returning '127.0.0.1' as column: ip2_0_0_
+2020-03-02 23:56:37,222 [10] DEBUG NHibernate.Type.StringType - returning '盛世长歌' as column: name3_0_0_
+2020-03-02 23:56:37,232 [10] DEBUG NHibernate.Type.Int32Type - returning '20' as column: count4_0_0_
+2020-03-02 23:56:37,242 [10] DEBUG NHibernate.Loader.Loader - done processing result set (2 rows)
+2020-03-02 23:56:37,255 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-03-02 23:56:37,266 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 360 ms
+2020-03-02 23:56:37,276 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-03-02 23:56:37,288 [10] DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-03-02 23:56:37,299 [10] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-03-02 23:56:37,311 [10] DEBUG NHibernate.Loader.Loader - total objects hydrated: 2
+2020-03-02 23:56:37,327 [10] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:37,342 [10] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:37,354 [10] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:37,363 [10] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:37,374 [10] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+2020-03-02 23:56:37,387 [10] DEBUG NHibernate.AdoNet.ConnectionManager - After autocommit
+2020-03-02 23:56:37,398 [10] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2020-03-02 23:56:37,410 [10] DEBUG NHibernate.Impl.SessionImpl - [session-id=81aaff20-2a84-4b82-a1b7-a544f560f472] running ISession.Dispose()
+2020-03-02 23:56:37,423 [10] DEBUG NHibernate.Impl.SessionImpl - [session-id=81aaff20-2a84-4b82-a1b7-a544f560f472] executing real Dispose(True)
+2020-03-02 23:56:37,435 [10] DEBUG NHibernate.Impl.SessionImpl - closing session
+2020-03-02 23:56:37,446 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+2020-03-02 23:56:55,076 [15] DEBUG CarServer.GameClientPeer - OperationCode:1
+2020-03-02 23:56:55,090 [15] DEBUG NHibernate.Impl.SessionFactoryImpl+SessionBuilderImpl`1[[NHibernate.ISessionBuilder, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4]] - Opening Hibernate Session.
+2020-03-02 23:56:55,100 [15] DEBUG NHibernate.Impl.SessionImpl - [session-id=fc92d562-76ea-495b-b947-ba8078dbee34] opened session at timestamp: 637187902151, for session factory: [/4eb69b6ea5284f3fb2c19d1228f5bb9f]
+2020-03-02 23:56:55,112 [15] DEBUG NHibernate.Transaction.AdoTransaction - Begin (Unspecified)
+2020-03-02 23:56:55,122 [15] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-03-02 23:56:55,134 [15] DEBUG NHibernate.Transaction.AdoTransaction - Start Commit
+2020-03-02 23:56:55,145 [15] DEBUG NHibernate.Impl.SessionImpl - before transaction completion
+2020-03-02 23:56:55,154 [15] DEBUG NHibernate.Transaction.AdoTransaction - DbTransaction Committed
+2020-03-02 23:56:55,163 [15] DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-03-02 23:56:55,176 [15] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-03-02 23:56:55,186 [15] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2020-03-02 23:56:55,203 [15] DEBUG NHibernate.Transaction.AdoTransaction - DbTransaction disposed.
+2020-03-02 23:56:55,214 [15] DEBUG NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+2020-03-02 23:56:55,224 [15] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new DbCommand, open DbCommands: 1
+2020-03-02 23:56:55,233 [15] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an DbCommand object for the SqlString: SELECT this_.id as id1_0_0_, this_.ip as ip2_0_0_, this_.name as name3_0_0_, this_.count as count4_0_0_ FROM serverproperty this_
+2020-03-02 23:56:55,243 [15] DEBUG NHibernate.SQL - SELECT this_.id as id1_0_0_, this_.ip as ip2_0_0_, this_.name as name3_0_0_, this_.count as count4_0_0_ FROM serverproperty this_
+2020-03-02 23:56:55,255 [15] DEBUG NHibernate.Connection.DriverConnectionProvider - Obtaining DbConnection from Driver
+2020-03-02 23:56:55,266 [15] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2020-03-02 23:56:55,285 [15] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened DbDataReader, open DbDataReaders: 1
+2020-03-02 23:56:55,296 [15] DEBUG NHibernate.Loader.Loader - processing result set
+2020-03-02 23:56:55,308 [15] DEBUG NHibernate.Loader.Loader - result set row: 0
+2020-03-02 23:56:55,318 [15] DEBUG NHibernate.Type.Int32Type - returning '1' as column: id1_0_0_
+2020-03-02 23:56:55,330 [15] DEBUG NHibernate.Loader.Loader - result row: EntityKey[CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:55,342 [15] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:55,353 [15] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:55,365 [15] DEBUG NHibernate.Type.StringType - returning '127.0.0.1' as column: ip2_0_0_
+2020-03-02 23:56:55,376 [15] DEBUG NHibernate.Type.StringType - returning '火树银花' as column: name3_0_0_
+2020-03-02 23:56:55,386 [15] DEBUG NHibernate.Type.Int32Type - returning '10' as column: count4_0_0_
+2020-03-02 23:56:55,397 [15] DEBUG NHibernate.Loader.Loader - result set row: 1
+2020-03-02 23:56:55,408 [15] DEBUG NHibernate.Type.Int32Type - returning '2' as column: id1_0_0_
+2020-03-02 23:56:55,421 [15] DEBUG NHibernate.Loader.Loader - result row: EntityKey[CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:55,433 [15] DEBUG NHibernate.Loader.Loader - Initializing object from DataReader: [CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:55,441 [15] DEBUG NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:55,449 [15] DEBUG NHibernate.Type.StringType - returning '127.0.0.1' as column: ip2_0_0_
+2020-03-02 23:56:55,460 [15] DEBUG NHibernate.Type.StringType - returning '盛世长歌' as column: name3_0_0_
+2020-03-02 23:56:55,469 [15] DEBUG NHibernate.Type.Int32Type - returning '20' as column: count4_0_0_
+2020-03-02 23:56:55,478 [15] DEBUG NHibernate.Loader.Loader - done processing result set (2 rows)
+2020-03-02 23:56:55,487 [15] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbDataReader, open DbDataReaders :0
+2020-03-02 23:56:55,496 [15] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 229 ms
+2020-03-02 23:56:55,507 [15] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed DbCommand, open DbCommands: 0
+2020-03-02 23:56:55,515 [15] DEBUG NHibernate.AdoNet.ConnectionManager - Aggressively releasing database connection
+2020-03-02 23:56:55,527 [15] DEBUG NHibernate.Connection.ConnectionProvider - Closing connection
+2020-03-02 23:56:55,536 [15] DEBUG NHibernate.Loader.Loader - total objects hydrated: 2
+2020-03-02 23:56:55,546 [15] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:55,555 [15] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [CarCommon.Model.ServerProperty#1]
+2020-03-02 23:56:55,564 [15] DEBUG NHibernate.Engine.TwoPhaseLoad - resolving associations for [CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:55,575 [15] DEBUG NHibernate.Engine.TwoPhaseLoad - done materializing entity [CarCommon.Model.ServerProperty#2]
+2020-03-02 23:56:55,584 [15] DEBUG NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+2020-03-02 23:56:55,594 [15] DEBUG NHibernate.AdoNet.ConnectionManager - After autocommit
+2020-03-02 23:56:55,605 [15] DEBUG NHibernate.Impl.SessionImpl - transaction completion
+2020-03-02 23:56:55,613 [15] DEBUG NHibernate.Impl.SessionImpl - [session-id=fc92d562-76ea-495b-b947-ba8078dbee34] running ISession.Dispose()
+2020-03-02 23:56:55,623 [15] DEBUG NHibernate.Impl.SessionImpl - [session-id=fc92d562-76ea-495b-b947-ba8078dbee34] executing real Dispose(True)
+2020-03-02 23:56:55,634 [15] DEBUG NHibernate.Impl.SessionImpl - closing session
+2020-03-02 23:56:55,644 [15] DEBUG NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+2020-03-02 23:57:45,095 [17] INFO  CarServer.CarApplication - Setup Successful
+2020-03-02 23:57:45,126 [17] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-02 23:57:45,159 [17] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-02 23:57:45,183 [12] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-02 23:57:54,340 [10] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-02 23:57:54,658 [10] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-02 23:57:54,667 [10] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-02 23:57:54,679 [10] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-02 23:57:54,695 [10] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-02 23:57:55,341 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:57:55,401 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-02 23:57:55,487 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:57:55,498 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-02 23:57:55,516 [10] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-02 23:57:55,529 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-02 23:57:55,542 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-02 23:57:55,555 [10] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-02 23:57:55,580 [10] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-02 23:57:55,624 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:57:55,669 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:57:55,796 [10] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-02 23:57:55,810 [10] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-02 23:57:55,823 [10] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-02 23:57:55,832 [10] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-02 23:57:55,935 [10] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-02 23:57:55,947 [10] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-02 23:57:55,958 [10] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-02 23:57:55,973 [10] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-02 23:57:55,982 [10] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-02 23:57:55,995 [10] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-02 23:57:56,008 [10] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-02 23:57:56,021 [10] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-02 23:57:56,037 [10] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-02 23:57:56,049 [10] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-02 23:57:56,064 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-02 23:57:56,078 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-02 23:57:56,093 [10] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-02 23:57:56,105 [10] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-02 23:57:56,118 [10] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-02 23:57:56,150 [10] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-02 23:57:56,537 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:57:56,664 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:57:56,796 [10] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-02 23:58:40,585 [13] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-02 23:58:54,567 [17] INFO  CarServer.CarApplication - Setup Successful
+2020-03-02 23:58:54,603 [17] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-02 23:58:54,645 [17] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-02 23:58:54,667 [17] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-02 23:58:54,679 [17] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-02 23:58:56,818 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-02 23:58:56,827 [10] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-02 23:58:56,837 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-02 23:58:57,130 [10] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-02 23:58:57,144 [10] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-02 23:58:57,157 [10] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-02 23:58:57,168 [10] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-02 23:58:57,889 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:58:57,944 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-02 23:58:58,028 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:58:58,041 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-02 23:58:58,057 [10] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-02 23:58:58,070 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-02 23:58:58,083 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-02 23:58:58,096 [10] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-02 23:58:58,111 [10] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-02 23:58:58,153 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:58:58,190 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:58:58,333 [10] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-02 23:58:58,344 [10] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-02 23:58:58,358 [10] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-02 23:58:58,370 [10] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-02 23:58:58,472 [10] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-02 23:58:58,485 [10] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-02 23:58:58,495 [10] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-02 23:58:58,505 [10] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-02 23:58:58,515 [10] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-02 23:58:58,525 [10] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-02 23:58:58,537 [10] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-02 23:58:58,547 [10] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-02 23:58:58,560 [10] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-02 23:58:58,572 [10] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-02 23:58:58,582 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-02 23:58:58,591 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-02 23:58:58,602 [10] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-02 23:58:58,613 [10] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-02 23:58:58,624 [10] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-02 23:58:58,655 [10] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-02 23:58:59,093 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:58:59,223 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-02 23:58:59,351 [10] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-02 23:59:09,121 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-02 23:59:09,132 [10] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-02 23:59:09,143 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-02 23:59:09,242 [10] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:GameClientPeer,ConnId:7,ip:127.0.0.1:61221, Data: F3-02-00-00-01-01-73-00-31-7B-22-49-44-22-3A-30-2C-22-55-73-65-72-4E-61-6D-65-22-3A-22-31-32-33-31-32-33-22-2C-22-50-61-73-73-77-6F-72-64-22-3A-22-34-31-32-34-31-32-34-22-7D,
+Exception:System.InvalidCastException: 无法将类型为“NHibernate.Criterion.QueryOver`2[CarCommon.Model.User,CarCommon.Model.User]”的对象强制转换为类型“CarCommon.Model.User”。
+   在 CarServer.DB.Manager.UserManager.QueryUser(String userName) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\DB\Manager\UserManager.cs:行号 16
+   在 CarServer.Handlers.LoginHandler.OnHandlerMessage(OperationRequest request) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\Handlers\LoginHandler.cs:行号 28
+   在 CarServer.GameClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\GameClientPeer.cs:行号 36
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1243
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2020-03-03 00:01:39,191 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:01:39,204 [11] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-03 00:01:39,216 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:01:42,586 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:01:42,598 [10] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:01:42,608 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:01:42,621 [10] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:GameClientPeer,ConnId:8,ip:127.0.0.1:61477, Data: F3-02-00-00-01-01-73-00-30-7B-22-49-44-22-3A-30-2C-22-55-73-65-72-4E-61-6D-65-22-3A-22-31-32-33-32-31-33-22-2C-22-50-61-73-73-77-6F-72-64-22-3A-22-31-32-34-31-32-34-22-7D,
+Exception:System.InvalidCastException: 无法将类型为“NHibernate.Criterion.QueryOver`2[CarCommon.Model.User,CarCommon.Model.User]”的对象强制转换为类型“CarCommon.Model.User”。
+   在 CarServer.DB.Manager.UserManager.QueryUser(String userName) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\DB\Manager\UserManager.cs:行号 16
+   在 CarServer.Handlers.LoginHandler.OnHandlerMessage(OperationRequest request) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\Handlers\LoginHandler.cs:行号 28
+   在 CarServer.GameClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\GameClientPeer.cs:行号 36
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1243
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2020-03-03 00:01:43,165 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:01:43,176 [13] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:01:43,187 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:01:43,202 [13] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:GameClientPeer,ConnId:8,ip:127.0.0.1:61477, Data: F3-02-00-00-01-01-73-00-30-7B-22-49-44-22-3A-30-2C-22-55-73-65-72-4E-61-6D-65-22-3A-22-31-32-33-32-31-33-22-2C-22-50-61-73-73-77-6F-72-64-22-3A-22-31-32-34-31-32-34-22-7D,
+Exception:System.InvalidCastException: 无法将类型为“NHibernate.Criterion.QueryOver`2[CarCommon.Model.User,CarCommon.Model.User]”的对象强制转换为类型“CarCommon.Model.User”。
+   在 CarServer.DB.Manager.UserManager.QueryUser(String userName) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\DB\Manager\UserManager.cs:行号 16
+   在 CarServer.Handlers.LoginHandler.OnHandlerMessage(OperationRequest request) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\Handlers\LoginHandler.cs:行号 28
+   在 CarServer.GameClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\GameClientPeer.cs:行号 36
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1243
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2020-03-03 00:03:42,563 [17] INFO  CarServer.CarApplication - Setup Successful
+2020-03-03 00:03:42,596 [17] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-03 00:03:42,637 [17] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-03 00:03:42,661 [12] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-03 00:03:42,674 [12] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-03 00:03:47,279 [15] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:03:47,290 [15] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-03 00:03:47,302 [15] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:03:47,618 [15] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-03 00:03:47,630 [15] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-03 00:03:47,642 [15] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-03 00:03:47,655 [15] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-03 00:03:48,340 [15] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:03:48,397 [15] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-03 00:03:48,483 [15] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:03:48,496 [15] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-03 00:03:48,518 [15] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-03 00:03:48,532 [15] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-03 00:03:48,544 [15] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-03 00:03:48,558 [15] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-03 00:03:48,573 [15] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-03 00:03:48,613 [15] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:03:48,646 [15] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:03:48,745 [15] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-03 00:03:48,756 [15] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-03 00:03:48,776 [15] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-03 00:03:48,791 [15] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-03 00:03:48,993 [15] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-03 00:03:49,007 [15] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-03 00:03:49,018 [15] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-03 00:03:49,028 [15] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-03 00:03:49,040 [15] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-03 00:03:49,053 [15] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-03 00:03:49,064 [15] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-03 00:03:49,075 [15] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-03 00:03:49,087 [15] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-03 00:03:49,096 [15] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:03:49,108 [15] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-03 00:03:49,118 [15] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-03 00:03:49,129 [15] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:03:49,140 [15] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-03 00:03:49,149 [15] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-03 00:03:49,178 [15] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-03 00:03:49,587 [15] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:03:49,707 [15] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:03:49,843 [15] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-03 00:03:50,107 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:03:50,116 [11] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:03:50,127 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:03:53,352 [15] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:03:53,367 [15] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:03:53,377 [15] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:04:07,467 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:04:07,479 [10] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:04:07,488 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:04:29,234 [15] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:04:29,248 [15] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:04:29,259 [15] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:04:34,822 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:04:34,833 [11] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:04:34,844 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:06:37,671 [17] INFO  CarServer.CarApplication - Setup Successful
+2020-03-03 00:06:37,704 [17] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-03 00:06:37,766 [17] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-03 00:06:37,800 [12] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-03 00:06:37,816 [12] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-03 00:06:47,460 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:06:47,472 [11] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-03 00:06:47,485 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:06:47,860 [11] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-03 00:06:47,873 [11] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-03 00:06:47,888 [11] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-03 00:06:47,901 [11] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-03 00:06:48,555 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:06:48,608 [11] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-03 00:06:48,712 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:06:48,733 [11] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-03 00:06:48,758 [11] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-03 00:06:48,769 [11] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-03 00:06:48,784 [11] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-03 00:06:48,796 [11] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-03 00:06:48,815 [11] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-03 00:06:48,848 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:06:48,881 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:06:48,992 [11] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-03 00:06:49,006 [11] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-03 00:06:49,028 [11] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-03 00:06:49,108 [11] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-03 00:06:49,253 [11] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-03 00:06:49,267 [11] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-03 00:06:49,279 [11] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-03 00:06:49,293 [11] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-03 00:06:49,306 [11] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-03 00:06:49,316 [11] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-03 00:06:49,328 [11] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-03 00:06:49,340 [11] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-03 00:06:49,351 [11] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-03 00:06:49,362 [11] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:06:49,373 [11] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-03 00:06:49,382 [11] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-03 00:06:49,394 [11] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:06:49,405 [11] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-03 00:06:49,414 [11] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-03 00:06:49,447 [11] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-03 00:06:49,851 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:06:49,981 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:06:50,107 [11] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-03 00:06:53,216 [15] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:06:53,228 [15] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:06:53,237 [15] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:06:53,336 [15] INFO  CarServer.CarApplication - ------------------------------------------
+2020-03-03 00:06:53,347 [15] INFO  CarServer.CarApplication - userClient: 123456
+2020-03-03 00:06:53,358 [15] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:GameClientPeer,ConnId:10,ip:127.0.0.1:61819, Data: F3-02-00-00-01-01-73-00-2E-7B-22-49-44-22-3A-30-2C-22-55-73-65-72-4E-61-6D-65-22-3A-22-72-6F-6F-74-22-2C-22-50-61-73-73-77-6F-72-64-22-3A-22-31-32-33-34-35-36-22-7D,
+Exception:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarServer.Handlers.LoginHandler.OnHandlerMessage(OperationRequest request) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\Handlers\LoginHandler.cs:行号 31
+   在 CarServer.GameClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\GameClientPeer.cs:行号 36
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1243
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2020-03-03 00:07:53,869 [17] INFO  CarServer.CarApplication - Setup Successful
+2020-03-03 00:07:53,898 [17] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-03 00:07:53,934 [17] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-03 00:07:53,959 [12] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-03 00:07:53,972 [12] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-03 00:08:04,895 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-03 00:08:04,937 [1] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-03 00:08:04,950 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-03 00:08:12,426 [1] INFO  CarServer.CarApplication - Setup Successful
+2020-03-03 00:08:12,451 [1] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-03 00:08:15,354 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:08:15,366 [10] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-03 00:08:15,377 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:08:15,696 [10] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-03 00:08:15,707 [10] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-03 00:08:15,719 [10] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-03 00:08:15,730 [10] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-03 00:08:16,508 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:08:16,567 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-03 00:08:16,676 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:08:16,692 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-03 00:08:16,709 [10] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-03 00:08:16,723 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-03 00:08:16,735 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-03 00:08:16,747 [10] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-03 00:08:16,760 [10] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-03 00:08:16,802 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:08:16,834 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:08:16,949 [10] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-03 00:08:16,962 [10] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-03 00:08:16,978 [10] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-03 00:08:16,988 [10] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-03 00:08:17,100 [10] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-03 00:08:17,114 [10] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-03 00:08:17,125 [10] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-03 00:08:17,134 [10] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-03 00:08:17,148 [10] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-03 00:08:17,160 [10] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-03 00:08:17,174 [10] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-03 00:08:17,187 [10] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-03 00:08:17,201 [10] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-03 00:08:17,215 [10] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:08:17,228 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-03 00:08:17,238 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-03 00:08:17,250 [10] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:08:17,260 [10] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-03 00:08:17,270 [10] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-03 00:08:17,302 [10] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-03 00:08:17,756 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:08:17,904 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:08:18,024 [10] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-03 00:08:27,139 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:08:27,150 [10] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:08:27,163 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:08:27,298 [10] INFO  CarServer.Handlers.LoginHandler - ------------------------------------------
+2020-03-03 00:08:27,310 [10] INFO  CarServer.Handlers.LoginHandler - userClient: 123456
+2020-03-03 00:08:27,323 [10] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:GameClientPeer,ConnId:2,ip:127.0.0.1:61883, Data: F3-02-00-00-01-01-73-00-2E-7B-22-49-44-22-3A-30-2C-22-55-73-65-72-4E-61-6D-65-22-3A-22-72-6F-6F-74-22-2C-22-50-61-73-73-77-6F-72-64-22-3A-22-31-32-33-34-35-36-22-7D,
+Exception:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarServer.Handlers.LoginHandler.OnHandlerMessage(OperationRequest request) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\Handlers\LoginHandler.cs:行号 34
+   在 CarServer.GameClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 C:\Users\94910\Desktop\Car\Server\SourceCode\CarServer\CarServer\GameClientPeer.cs:行号 36
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1243
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2020-03-03 00:09:07,476 [16] INFO  CarServer.CarApplication - Setup Successful
+2020-03-03 00:09:07,506 [16] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-03 00:09:07,558 [16] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-03 00:09:07,594 [12] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-03 00:09:07,613 [12] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-03 00:09:16,127 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:09:16,137 [10] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-03 00:09:16,149 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:09:16,457 [10] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-03 00:09:16,471 [10] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-03 00:09:16,485 [10] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-03 00:09:16,496 [10] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-03 00:09:17,115 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:09:17,173 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-03 00:09:17,259 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:09:17,272 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-03 00:09:17,288 [10] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-03 00:09:17,299 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-03 00:09:17,311 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-03 00:09:17,320 [10] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-03 00:09:17,333 [10] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-03 00:09:17,370 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:09:17,405 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:09:17,517 [10] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-03 00:09:17,529 [10] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-03 00:09:17,541 [10] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-03 00:09:17,556 [10] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-03 00:09:17,669 [10] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-03 00:09:17,700 [10] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-03 00:09:17,716 [10] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-03 00:09:17,735 [10] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-03 00:09:17,751 [10] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-03 00:09:17,769 [10] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-03 00:09:17,787 [10] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-03 00:09:17,804 [10] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-03 00:09:17,818 [10] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-03 00:09:17,831 [10] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:09:17,843 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-03 00:09:17,852 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-03 00:09:17,865 [10] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:09:17,877 [10] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-03 00:09:17,889 [10] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-03 00:09:17,925 [10] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-03 00:09:18,326 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:09:18,449 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:09:18,567 [10] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-03 00:09:25,962 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:09:25,974 [11] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-03 00:09:25,984 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:09:33,269 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:09:33,280 [13] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:09:33,291 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:09:33,406 [13] INFO  CarServer.Handlers.LoginHandler - ------------------------------------------
+2020-03-03 00:09:33,420 [13] INFO  CarServer.Handlers.LoginHandler - userClient: 123456
+2020-03-03 00:09:33,432 [13] INFO  CarServer.Handlers.LoginHandler - userDB: 
+2020-03-03 00:09:33,442 [13] INFO  CarServer.Handlers.LoginHandler - ------------------------------------------
+2020-03-03 00:11:05,530 [16] INFO  CarServer.CarApplication - Setup Successful
+2020-03-03 00:11:05,560 [16] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-03 00:11:05,601 [16] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-03 00:11:05,628 [12] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-03 00:11:05,641 [12] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-03 00:11:11,849 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:11:11,860 [10] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-03 00:11:11,870 [10] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:11:12,216 [10] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-03 00:11:12,227 [10] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-03 00:11:12,242 [10] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-03 00:11:12,257 [10] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-03 00:11:13,173 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:13,231 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-03 00:11:13,324 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:13,336 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-03 00:11:13,352 [10] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-03 00:11:13,363 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-03 00:11:13,374 [10] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-03 00:11:13,384 [10] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-03 00:11:13,396 [10] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-03 00:11:13,428 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:13,460 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:13,575 [10] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-03 00:11:13,586 [10] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-03 00:11:13,601 [10] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-03 00:11:13,617 [10] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-03 00:11:13,722 [10] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-03 00:11:13,736 [10] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-03 00:11:13,748 [10] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-03 00:11:13,760 [10] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-03 00:11:13,770 [10] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-03 00:11:13,783 [10] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-03 00:11:13,797 [10] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-03 00:11:13,811 [10] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-03 00:11:13,823 [10] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-03 00:11:13,836 [10] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:11:13,849 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-03 00:11:13,859 [10] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-03 00:11:13,872 [10] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:11:13,883 [10] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-03 00:11:13,897 [10] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-03 00:11:13,930 [10] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-03 00:11:14,397 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:14,521 [10] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:14,652 [10] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-03 00:11:19,416 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:11:19,428 [13] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:11:19,439 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:11:19,521 [13] INFO  CarServer.DB.Manager.UserManager - ------------------------------------------
+2020-03-03 00:11:19,535 [13] INFO  CarServer.DB.Manager.UserManager - res: NHibernate.Criterion.QueryOver`2[CarCommon.Model.User,CarCommon.Model.User]
+2020-03-03 00:11:19,547 [13] INFO  CarServer.DB.Manager.UserManager - ------------------------------------------
+2020-03-03 00:11:19,593 [13] INFO  CarServer.Handlers.LoginHandler - ------------------------------------------
+2020-03-03 00:11:19,602 [13] INFO  CarServer.Handlers.LoginHandler - userClient: 123456
+2020-03-03 00:11:19,615 [13] INFO  CarServer.Handlers.LoginHandler - userDB: 
+2020-03-03 00:11:19,626 [13] INFO  CarServer.Handlers.LoginHandler - ------------------------------------------
+2020-03-03 00:11:49,130 [16] INFO  CarServer.CarApplication - Setup Successful
+2020-03-03 00:11:49,160 [16] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-03 00:11:49,197 [16] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-03 00:11:49,222 [12] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-03 00:11:49,235 [12] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-03 00:11:54,363 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:11:54,374 [11] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-03 00:11:54,385 [11] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:11:54,709 [11] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-03 00:11:54,720 [11] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-03 00:11:54,736 [11] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-03 00:11:54,749 [11] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-03 00:11:55,418 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:55,472 [11] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-03 00:11:55,556 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:55,566 [11] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-03 00:11:55,581 [11] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-03 00:11:55,594 [11] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-03 00:11:55,605 [11] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-03 00:11:55,617 [11] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-03 00:11:55,635 [11] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-03 00:11:55,672 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:55,704 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:55,815 [11] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-03 00:11:55,826 [11] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-03 00:11:55,837 [11] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-03 00:11:55,848 [11] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-03 00:11:56,022 [11] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-03 00:11:56,038 [11] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-03 00:11:56,051 [11] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-03 00:11:56,063 [11] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-03 00:11:56,075 [11] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-03 00:11:56,088 [11] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-03 00:11:56,100 [11] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-03 00:11:56,112 [11] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-03 00:11:56,124 [11] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-03 00:11:56,135 [11] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:11:56,145 [11] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-03 00:11:56,155 [11] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-03 00:11:56,169 [11] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:11:56,178 [11] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-03 00:11:56,188 [11] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-03 00:11:56,222 [11] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-03 00:11:56,608 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:56,730 [11] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:11:56,850 [11] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-03 00:11:58,548 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:11:58,559 [13] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:11:58,568 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:11:58,641 [13] INFO  CarServer.DB.Manager.UserManager - ------------------------------------------
+2020-03-03 00:11:58,676 [13] INFO  CarServer.DB.Manager.UserManager - res: CarCommon.Model.User
+2020-03-03 00:11:58,686 [13] INFO  CarServer.DB.Manager.UserManager - ------------------------------------------
+2020-03-03 00:11:58,701 [13] INFO  CarServer.Handlers.LoginHandler - ------------------------------------------
+2020-03-03 00:11:58,711 [13] INFO  CarServer.Handlers.LoginHandler - userClient: 123456
+2020-03-03 00:11:58,721 [13] INFO  CarServer.Handlers.LoginHandler - userDB: 
+2020-03-03 00:11:58,730 [13] INFO  CarServer.Handlers.LoginHandler - ------------------------------------------
+2020-03-03 00:12:21,099 [16] INFO  CarServer.CarApplication - Setup Successful
+2020-03-03 00:12:21,130 [16] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-03 00:12:21,165 [16] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-03 00:12:21,210 [12] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-03 00:12:21,251 [12] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer
+2020-03-03 00:12:36,624 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:12:36,633 [13] INFO  CarServer.GameClientPeer - OperationCode:1
+2020-03-03 00:12:36,642 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:12:36,959 [13] INFO  NHibernate.Cfg.Environment - NHibernate 5.1.1 (assembly 5.1.0.0)
+2020-03-03 00:12:36,971 [13] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2020-03-03 00:12:36,984 [13] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2020-03-03 00:12:36,994 [13] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2020-03-03 00:12:37,660 [13] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:12:37,715 [13] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.ServerProperty -> serverproperty
+2020-03-03 00:12:37,802 [13] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:12:37,813 [13] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: CarCommon.Model.User -> user
+2020-03-03 00:12:37,840 [13] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2020-03-03 00:12:37,852 [13] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2020-03-03 00:12:37,865 [13] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2020-03-03 00:12:37,880 [13] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2020-03-03 00:12:37,895 [13] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2020-03-03 00:12:37,930 [13] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:12:37,964 [13] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:12:38,067 [13] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+2020-03-03 00:12:38,077 [13] INFO  NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+2020-03-03 00:12:38,090 [13] INFO  NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2020-03-03 00:12:38,101 [13] INFO  NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+2020-03-03 00:12:38,254 [13] INFO  NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithSystemTransactionFactory
+2020-03-03 00:12:38,269 [13] INFO  NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+2020-03-03 00:12:38,282 [13] INFO  NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+2020-03-03 00:12:38,295 [13] INFO  NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+2020-03-03 00:12:38,306 [13] INFO  NHibernate.Cfg.SettingsFactory - Statistics: disabled
+2020-03-03 00:12:38,316 [13] INFO  NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2020-03-03 00:12:38,329 [13] INFO  NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2020-03-03 00:12:38,342 [13] INFO  NHibernate.Cfg.SettingsFactory - Query provider: NHibernate.Linq.DefaultQueryProvider
+2020-03-03 00:12:38,354 [13] INFO  NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+2020-03-03 00:12:38,368 [13] INFO  NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:12:38,378 [13] INFO  NHibernate.Cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2020-03-03 00:12:38,389 [13] INFO  NHibernate.Cfg.SettingsFactory - Order SQL updates for batching: disabled
+2020-03-03 00:12:38,402 [13] INFO  NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2020-03-03 00:12:38,412 [13] INFO  NHibernate.Cfg.SettingsFactory - Default flush mode: Auto
+2020-03-03 00:12:38,422 [13] INFO  NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+2020-03-03 00:12:38,452 [13] INFO  NHibernate.Impl.SessionFactoryImpl - building session factory
+2020-03-03 00:12:38,844 [13] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:12:38,974 [13] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQLDialect
+2020-03-03 00:12:39,101 [13] INFO  NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+2020-03-03 00:12:41,160 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:12:41,171 [13] INFO  CarServer.GameClientPeer - OperationCode:0
+2020-03-03 00:12:41,179 [13] INFO  CarServer.GameClientPeer - --------------------
+2020-03-03 00:12:41,246 [13] INFO  CarServer.DB.Manager.UserManager - ------------------------------------------
+2020-03-03 00:12:41,287 [13] INFO  CarServer.DB.Manager.UserManager - res: CarCommon.Model.User
+2020-03-03 00:12:41,296 [13] INFO  CarServer.DB.Manager.UserManager - ------------------------------------------
+2020-03-03 00:12:41,312 [13] INFO  CarServer.Handlers.LoginHandler - ------------------------------------------
+2020-03-03 00:12:41,322 [13] INFO  CarServer.Handlers.LoginHandler - userClient: 123456
+2020-03-03 00:12:41,332 [13] INFO  CarServer.Handlers.LoginHandler - userDB: CarCommon.Model.User
+2020-03-03 00:12:41,343 [13] INFO  CarServer.Handlers.LoginHandler - ------------------------------------------
+2020-03-03 00:39:32,696 [16] INFO  CarServer.CarApplication - Setup Successful
+2020-03-03 00:39:32,724 [16] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=CarServer; AppPath=C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\CarServer, Type=CarServer.CarApplication 
+2020-03-03 00:39:32,757 [16] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=CarServer
+2020-03-03 00:39:32,780 [16] INFO  CarServer.CarApplication - TearDown Successful
+2020-03-03 00:39:32,798 [16] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=CarServer

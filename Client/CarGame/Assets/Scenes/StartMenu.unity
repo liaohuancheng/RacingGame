@@ -262,6 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 51766283}
   - component: {fileID: 51766282}
+  - component: {fileID: 51766285}
   - component: {fileID: 51766284}
   m_Layer: 0
   m_Name: PhotonEngine
@@ -312,6 +313,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   opCode: 1
+--- !u!114 &51766285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51766281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9fd73692070c045b2a57d476fbbad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opCode: 0
 --- !u!1 &100799687
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.UI.Login;
+﻿using Assets.Scripts.Photon.Controller;
+using Assets.Scripts.UI.Login;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class LoginDelegate : MonoBehaviour
     public Button RegisterBtn;
     public Dropdown ServerNameDropDown;
     private LoginModel loginModel;
+    private LoginController loginController;
     private static LoginDelegate _instance = null;
     public static LoginDelegate Instance
     {
@@ -38,12 +40,12 @@ public class LoginDelegate : MonoBehaviour
         else
             Destroy(gameObject);
         loginModel = new LoginModel();
+        loginController = new LoginController();
     }
 
     public void OnCLickLoginBtn()
     {
-        Debug.Log("username: " + UserNameInput.text + " " + "password: " + PasswordInput.text);
-        Debug.Log("username: 123");
+        loginController.Login(UserNameInput.text, PasswordInput.text);
     }
 
     public void OnClickRegisterBtn()

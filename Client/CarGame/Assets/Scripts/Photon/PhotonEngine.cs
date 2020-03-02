@@ -41,6 +41,7 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
 
     public void SendRequest(OperationCode operationCode, Dictionary<byte,object> parameters)
     {
+        Debug.Log("发起请求 operationCode:" + operationCode);
         peer.OpCustom((byte)operationCode, parameters, true);
     }
 
