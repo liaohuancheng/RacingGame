@@ -4,3 +4,15 @@
 21940: 00:08:04.890 - Will produce at most: 10 crash dumps
 21940: 00:08:04.890 - Service shutting down
 21940: 00:08:04.892 - Service shut down complete
+18104: 14:32:26.985 - ---
+18104: 14:32:26.985 - Service: "Photon Socket Server" starting
+18104: 14:32:26.986 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+18104: 14:32:26.988 - Will produce at most: 10 crash dumps
+18104: 14:32:26.988 - Service shutting down
+18104: 14:32:26.991 - Service shut down complete
+3580: 17:07:22.262 - ---
+3580: 17:07:22.262 - Service: "Photon Socket Server" starting
+3580: 17:07:22.262 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+3580: 17:07:22.264 - Will produce at most: 10 crash dumps
+3580: 17:07:22.264 - Service shutting down
+3580: 17:07:22.267 - Service shut down complete

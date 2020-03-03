@@ -22,7 +22,15 @@ namespace Assets.Scripts.Photon.Controller
         }
         public override void OnOperationResponse(OperationResponse operationResponse)
         {
-            throw new NotImplementedException();
+            switch (operationResponse.ReturnCode)
+            {
+                case (short)ReturnCode.Success:
+                    RegisterDgt.Instance.RegisterSuccess();
+                    break;
+                case (short)ReturnCode.Fail:
+                    RegisterDgt.Instance.RegisterFail();
+                    break;
+            }
         }
     }
 }
