@@ -1,12 +1,13 @@
 ﻿using Assets.Scripts.Photon.Controller;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RegisterDgt : MonoBehaviour
 {
     private RegisterController registerController;
     private static RegisterDgt _instance = null;
+    public InputField userNameInput;
+    public InputField passwordInput;
     public static RegisterDgt Instance
     {
         get
@@ -31,12 +32,24 @@ public class RegisterDgt : MonoBehaviour
             _instance = this;
         else
             Destroy(gameObject);
-        registerController = new RegisterController();
+        registerController = FindObjectOfType<RegisterController>();
     }
+
+    public void OnClickRegisterBtn()
+    {
+        registerController.Register(userNameInput.text, passwordInput.text);
+    }
+
+    public void OnClickCancelBtn()
+    {
+
+    }
+
     public void RegisterSuccess()
     {
         Debug.Log("注册成功");
     }
+
     public void RegisterFail()
     {
         Debug.Log("注册失败");
