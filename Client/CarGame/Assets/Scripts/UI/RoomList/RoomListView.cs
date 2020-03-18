@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ public class RoomListView : MonoBehaviour
 {
     public GameObject roomCellPre;
     public List<GameObject> RoomCellList;
+    public Dictionary<int,GameObject> RoomCellDic;
     public Transform contentTrans;
 
     //public RoomListView()
@@ -17,10 +19,10 @@ public class RoomListView : MonoBehaviour
     {
         contentTrans = GameObject.Find("RoomCellContent").transform;
         roomCellPre = (GameObject)Resources.Load("Prefabs/UI/RoomCell");
-        Test();
+        RoomCellDic = new Dictionary<int, GameObject>();
     }
 
-    public void AddRoomCell(string roomName, string houseOwerName, string peopleCount)
+    public void AddRoomCell(string roomName, string houseOwerName, string peopleCount,int RoomID)
     {
         
         GameObject roomCellGo = GameObject.Instantiate(roomCellPre, contentTrans);
@@ -30,14 +32,26 @@ public class RoomListView : MonoBehaviour
         roomNameObj.GetComponent<Text>().text = roomName;
         houseOwerNameObj.GetComponent<Text>().text = houseOwerName;
         peopleCountObj.GetComponent<Text>().text = peopleCount;
-        RoomCellList.Add(roomCellGo);
+        RoomCellDic.Add(RoomID, roomCellGo);
     }
 
-    public void Test()
+    public void RemoveRoomCell()
     {
-        AddRoomCell("111", "123", "2/12");
-        AddRoomCell("111", "123", "2/12");
-        AddRoomCell("111", "123", "2/12");
-        AddRoomCell("111", "123", "2/12");
+        foreach (var item in RoomCellDic.ToList())
+        {
+            GameObject roomCellGo = item.Value;
+            RoomCellDic.Remove(item.Key);
+            Destroy(roomCellGo);
+        }
+        
     }
+
+    //public void Test()
+    //{
+    //    AddRoomCell("111", "123", "2/12", 1);
+    //    AddRoomCell("112", "123", "2/12", 2);
+    //    AddRoomCell("113", "123", "2/12", 3);
+    //    AddRoomCell("114", "123", "2/12", 4);
+    //    RemoveRoomCell();
+    //}
 }
