@@ -3,7 +3,6 @@ using CarCommon;
 using ExitGames.Client.Photon;
 using System.Collections.Generic;
 using LitJson;
-using UnityEngine;
 
 public class ServerController : ControllerBase
 {
@@ -32,9 +31,6 @@ public class ServerController : ControllerBase
         List<CarCommon.Model.ServerProperty> serverLst = 
             JsonMapper.ToObject<List<CarCommon.Model.ServerProperty>>(jsonObject.ToString());
         LoginDelegate.Instance.InitServerList(serverLst);
-
-
-
     }
 
 }
