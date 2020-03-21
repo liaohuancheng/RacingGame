@@ -10,6 +10,10 @@ namespace Assets.Scripts.Photon.Controller
 {
     class LoginController : ControllerBase
     {
+        public LoginController()
+        {
+            opCode = OperationCode.Login
+        }
         public void Login(string userName, string password)
         {
             User user = new User() { UserName = userName, Password = password };

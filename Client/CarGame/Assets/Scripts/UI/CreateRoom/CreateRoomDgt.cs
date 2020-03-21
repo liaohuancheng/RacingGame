@@ -1,18 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Assets.Scripts.Photon.Controller;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CreateRoomDgt : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public InputField RoomNameInput;
+    private CreateRoomController createRoomController;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        RoomNameInput = GameObject.Find("RoomNameInput").GetComponent<InputField>();
+        createRoomController = new CreateRoomController();
+    }
+    public void CreateRoom()
+    {
+        Debug.Log(RoomNameInput.text);
+        if (RoomNameInput.text != null)
+        {
+            createRoomController.CreateRoom(RoomNameInput.text);
+        }
     }
 }

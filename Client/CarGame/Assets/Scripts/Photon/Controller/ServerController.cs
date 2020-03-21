@@ -6,6 +6,10 @@ using LitJson;
 
 public class ServerController : ControllerBase
 {
+    public ServerController()
+    {
+        opCode = OperationCode.GetServer;
+    }
     public override void Start()
     {
         base.Start();
