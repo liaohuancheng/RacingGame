@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CarCommon;
 using CarCommon.Model;
 using ExitGames.Client.Photon;
@@ -12,10 +9,11 @@ namespace Assets.Scripts.Photon.Controller
 {
     public class CreateRoomController : ControllerBase
     {
-        public CreateRoomController()
+        public override OperationCode OpCode
         {
-            opCode = OperationCode.CreateRoom;
+            get { return OperationCode.CreateRoom; }
         }
+
         public void CreateRoom(string roomName)
         {
             RoomProperty roomProperty = new RoomProperty() { RoomOwnerName = "Test",RoomName = roomName};
@@ -26,7 +24,10 @@ namespace Assets.Scripts.Photon.Controller
         }
         public override void OnOperationResponse(OperationResponse operationResponse)
         {
-            throw new NotImplementedException();
+            UIController.Instance.HideUI("CreateRoomPanel");
+            UIController.Instance.ShowUI("RoomLstRoot");
+            GetRoomController.Instance.GetRoomLst();
+
         }
     }
 }

@@ -4,20 +4,18 @@ using UnityEngine;
 
 namespace Assets.Scripts.Photon.Controller
 {
-    public abstract class ControllerBase : MonoBehaviour
+    public abstract class ControllerBase
     {
-        public OperationCode opCode;
-
-        public virtual void Start()
+        public abstract OperationCode OpCode { get; }
+        public ControllerBase()
         {
-            PhotonEngine.Instance.RegisterController(opCode, this);
+            PhotonEngine.Instance.RegisterController(OpCode, this);
         }
-
         public abstract void OnOperationResponse(OperationResponse operationResponse );
 
         public virtual void OnDestroy()
         {
-            PhotonEngine.Instance.UnRegisterController(opCode);
+            PhotonEngine.Instance.UnRegisterController(OpCode);
         }
 
     }

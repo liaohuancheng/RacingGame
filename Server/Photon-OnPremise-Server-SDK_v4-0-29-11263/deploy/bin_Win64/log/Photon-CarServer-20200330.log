@@ -1,0 +1,189 @@
+1628: 05:15:57.548 - FAILED license server contact - trying next URL.
+1628: 05:15:57.557 - Connect to Photon License Server failed. Trying again later. Allowed days without contact: 2
+17664: 06:15:57.570 - FAILED license server contact - trying next URL.
+17664: 06:15:57.571 - Connect to Photon License Server failed. Trying again later. Allowed days without contact: 2
+16992: 07:15:57.588 - FAILED license server contact - trying next URL.
+16992: 07:15:57.589 - Connect to Photon License Server failed. Trying again later. Allowed days without contact: 2
+17664: 08:15:57.592 - FAILED license server contact - trying next URL.
+17664: 08:15:57.593 - Connect to Photon License Server failed. Trying again later. Allowed days without contact: 2
+15844: 16:02:42.088 - Service is stopped...
+15844: 16:02:42.089 - Server shutting down...
+15844: 16:02:42.089 - Shutdown monitoring enabled, 30000ms before process abort
+15844: 16:02:42.090 - Notifying CLR applications of shutdown...
+15844: 16:02:42.090 - RequestApplicationStop: 2
+15844: 16:02:42.123 - RequestStop: defalt app domain
+15844: 16:02:42.140 - Shutting down WebSocket Outbound Connection Manager...
+15844: 16:02:42.141 - Shutting down TCP Outbound Connection Manager...
+15844: 16:02:42.142 - Shutting down ENet Outbound Connection Manager...
+15844: 16:02:42.142 - Disconnecting all outbound peers...
+15844: 16:02:42.143 - Shutting down ENet host...
+15844: 16:02:42.143 - Disconnecting all peers...
+15844: 16:02:42.143 - Shutting down socket servers...
+15844: 16:02:42.143 - Shutting down ENet thread pool...
+15844: 16:02:42.144 - Shutting down TCP inactivity timers...
+15844: 16:02:42.144 - WaitingForShutdownToComplete: TCP:0.0.0.0:4530
+15844: 16:02:42.144 - OnShutdownCompleted: TCP:0.0.0.0:4530
+15844: 16:02:42.144 - WaitingForShutdownToComplete: UDP:127.0.0.1:5055
+15844: 16:02:42.144 - OnShutdownCompleted: UDP:127.0.0.1:5055
+15844: 16:02:42.144 - WaitingForShutdownToComplete: UDP:192.168.1.100:5055
+15844: 16:02:42.144 - OnShutdownCompleted: UDP:192.168.1.100:5055
+15844: 16:02:42.144 - WaitingForShutdownToComplete: UDP:192.168.133.1:5055
+15844: 16:02:42.144 - OnShutdownCompleted: UDP:192.168.133.1:5055
+15844: 16:02:42.144 - WaitingForShutdownToComplete: UDP:192.168.137.1:5055
+15844: 16:02:42.144 - OnShutdownCompleted: UDP:192.168.137.1:5055
+15844: 16:02:42.144 - WaitingForShutdownToComplete: UDP:192.168.40.1:5055
+15844: 16:02:42.144 - OnShutdownCompleted: UDP:192.168.40.1:5055
+15844: 16:02:42.145 - Shutting down CLR applications...
+15844: 16:02:42.183 - Shutting down business logic thread pool...
+11832: 16:02:42.184 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+15844: 16:02:42.186 - Shutting down I/O thread pool...
+15844: 16:02:42.187 - Destroying servers
+15844: 16:02:42.188 - Destroying WebSocket Outbound Connection Manager
+15844: 16:02:42.189 - Destroying TCP Outbound Connection Manager
+15844: 16:02:42.189 - Destroying TCP inactivity timer
+15844: 16:02:42.189 - Destroying ENet timer wheel
+15844: 16:02:42.189 - Destroying ENet host
+15844: 16:02:42.190 - Destroying ENet outbound host
+15844: 16:02:42.190 - Destroying HTTP inactivity timer
+15844: 16:02:42.190 - Destroying HTTP host
+15844: 16:02:42.190 - Destroying HTTP Chunk host
+15844: 16:02:42.190 - Flushing ENET buffer allocator...
+15844: 16:02:42.192 - Flushing TCP buffer handle allocator...
+15844: 16:02:42.192 - Flushing stream socket allocator...
+15844: 16:02:42.192 - Flushing inbound datagram socket allocator...
+15844: 16:02:42.193 - Flushing outbound datagram socket allocator...
+15844: 16:02:42.193 - Destroying CLR dispatcher
+15844: 16:02:42.194 - Destroying CLR applications
+15844: 16:02:42.195 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+2156: 16:02:42.208 - Unloading Domain: ApplicationName = 'CarServer', DomainId='2'
+11832: 16:02:42.224 - CManagedHost::OnDomainUnload() - 2
+15844: 16:02:42.292 - ~CCLRApplicationCollection() - Done. All objects released
+15844: 16:02:42.292 - ~CManagedHost() - Release default app domain
+15844: 16:02:42.292 - CManagedHost::OnDomainUnload() - 1
+15844: 16:02:42.292 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+15844: 16:02:42.293 - ~CManagedHost
+15844: 16:02:42.293 - Destroying ENet thread pool
+15844: 16:02:42.293 - Destroying Business logic thread pool
+15844: 16:02:42.293 - Destroying I/O thread pool
+15844: 16:02:42.293 - Destroying ENet buffer allocator
+15844: 16:02:42.293 - Destroying TCP buffer allocator
+15844: 16:02:42.293 - Destroying TCP socket allocator
+15844: 16:02:42.293 - Destroying ENet inbound socket allocator
+15844: 16:02:42.293 - Destroying ENet outbound socket allocator
+15844: 16:02:42.293 - Destroying shared datagram flow control data
+15844: 16:02:42.295 - Shutdown complete...
+15844: 16:02:42.295 - Service shutting down
+15844: 16:02:42.298 - Service shut down complete
+22704: 16:02:44.877 - ---
+22704: 16:02:44.877 - Service: "Photon Socket Server" starting
+22704: 16:02:44.878 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+22704: 16:02:44.880 - Will produce at most: 10 crash dumps
+22704: 16:02:44.880 - Action: run as exe
+22704: 16:02:44.880 - Server Starting...
+22704: 16:02:44.880 -    Tick count: 93376843 (wraps in: 48.6295 days)
+22704: 16:02:44.880 - Tick count 64: 93376843
+22704: 16:02:44.880 - Photon Version: 4.0.28.2962
+22704: 16:02:44.880 - PID: 22768
+22704: 16:02:44.881 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+22704: 16:02:44.881 - Will NOT log unimportant exceptions
+22704: 16:02:44.884 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+22704: 16:02:44.884 - Shutdown timeout enabled: 30000ms
+22704: 16:02:44.886 - Starting I/O thread pool with 2 threads
+22704: 16:02:44.886 - Using Standard allocator
+22704: 16:02:44.886 - Max message size: 512000
+22704: 16:02:44.886 - Starting business logic thread pool with the following settings
+22704: 16:02:44.886 - InitialThreads: 4 threads
+22704: 16:02:44.886 - MinThreads: 4 threads
+22704: 16:02:44.886 - Thread pool is fixed size
+22704: 16:02:44.887 - Starting ENet thread pool with the following settings
+22704: 16:02:44.887 - InitialThreads: 2 threads
+22704: 16:02:44.887 - MinThreads: 2 threads
+22704: 16:02:44.887 - Thread pool is fixed size
+22704: 16:02:44.887 - OnlyDispatchTimers: False
+22704: 16:02:44.888 - S2S: flow control: Max pending writes: 50
+22704: 16:02:44.888 - S2S: flow control: Max queued buffers: 200
+22704: 16:02:44.888 - S2S: flow control: Max pending writes MUX: 500
+22704: 16:02:44.888 - S2S: flow control: Max queued buffers MUX: 2000
+22704: 16:02:44.888 - S2S: MaxInboundMessageSize: 512000
+22704: 16:02:44.888 - S2S: MaxOutboundMessageSize: 512000
+22704: 16:02:44.888 - S2S: No inactivity timeout
+22704: 16:02:44.893 - WebSocket S2S: MaxInboundMessageSize: 512000
+22704: 16:02:44.893 - WebSocket S2S: MaxOutboundMessageSize: 512000
+22704: 16:02:44.893 - WebSocket S2S: No inactivity timeout
+22704: 16:02:44.893 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+22704: 16:02:44.894 - Per peer bandwidth limit
+22704: 16:02:44.894 - Transmit Rate Limit: 256 KB/Sec
+22704: 16:02:44.894 - Limit period: 200ms
+22704: 16:02:44.894 - Limit per period: 52428 bytes
+22704: 16:02:44.894 - Max queued data for transmission per peer: 512000 bytes
+22704: 16:02:44.894 - Minimum retransmit timeout: 200
+22704: 16:02:44.894 - No Maximum retransmit timeout
+22704: 16:02:44.894 - Minimum ENet timeout: 5000ms
+22704: 16:02:44.894 - Maximum ENet timeout: 30000ms
+22704: 16:02:44.894 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+22704: 16:02:44.894 - No RTT ACK adjustment timeout
+22704: 16:02:44.894 - Outbound ENet: MaxInboundMessageSize: 512000
+22704: 16:02:44.894 - Outbound ENet: MaxOutboundMessageSize: 512000
+22704: 16:02:44.944 - GetRuntime - About to load CLR - versions available:
+22704: 16:02:44.944 - v2.0.50727
+22704: 16:02:44.944 - v4.0.30319
+22704: 16:02:44.944 - Configuration requests: "v2.0.50727"
+22704: 16:02:44.944 - About to load version: "v2.0.50727"
+22704: 16:02:44.954 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+22704: 16:02:44.954 - CLRBaseDirectory set to "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy"
+22704: 16:02:44.954 - Optimising event broadcast for 20 or more peers
+22704: 16:02:44.955 - Start: About to load CLR - versions available:
+22704: 16:02:44.955 - v2.0.50727
+22704: 16:02:44.955 - v4.0.30319
+22704: 16:02:44.955 - No preference in configuration file, will load latest.
+22704: 16:02:44.955 - About to load version: "v4.0.30319"
+22704: 16:02:44.957 - Loaded version: "v4.0.30319"
+22704: 16:02:45.292 - Photon host runtime loaded
+22704: 16:02:47.912 - License is valid.
+22704: 16:02:47.912 - Licensed for 100 concurrent connections.
+22704: 16:02:47.912 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+22704: 16:02:47.912 - ENet: Per peer bandwidth limit
+22704: 16:02:47.912 - ENet: Transmit Rate Limit: 256 KB/Sec
+22704: 16:02:47.912 - ENet: Limit period: 200ms
+22704: 16:02:47.912 - ENet: Limit per period: 52428 bytes
+22704: 16:02:47.912 - ENet: Max queued data for transmission per peer: 512000 bytes
+22704: 16:02:47.912 - ENet: Minimum retransmit timeout: 200
+22704: 16:02:47.912 - No Maximum retransmit timeout
+22704: 16:02:47.912 - ENet: Minimum timeout: 5000ms
+22704: 16:02:47.912 - ENet: Maximum timeout: 30000ms
+22704: 16:02:47.912 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+22704: 16:02:47.912 - No RTT ACK adjustment timeout
+22704: 16:02:47.912 - About to load application: CarServer from CarServer
+22704: 16:02:47.912 - Auto restart is enabled for application, existing connections will be terminated during restart
+22704: 16:02:47.912 - Application will restart 1000ms after the last change detected
+22704: 16:02:47.912 - Application will restart if files matching the following are changed: "dll;config"
+22704: 16:02:47.912 - Application will NOT restart if files matching the following are changed: "log4net.config"
+22704: 16:02:48.574 - Taking reference on default app domain
+22704: 16:02:49.128 - Application: "CarServer" started in app domain: 2
+22704: 16:02:49.128 - Adding TCP listener on: 0.0.0.0: 4530 with a listen backlog of: 150
+22704: 16:02:49.129 - TCP inactivity timeout: 10000ms
+22704: 16:02:49.129 - TCP disconnect timeout: 120000ms
+22704: 16:02:49.129 - MaxInboundMessageSize: 512000
+22704: 16:02:49.129 - MaxOutboundMessageSize: 512000
+22704: 16:02:49.129 - Forcing all applications ids to: "CarServer"
+22704: 16:02:49.138 - Serving policy file requests from: "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\Policy\assets\socket-policy.xml"
+22704: 16:02:49.138 - Forcing all applications ids to: "CarServer"
+22704: 16:02:49.138 - MaxInboundMessageSize: 512000
+22704: 16:02:49.138 - MaxOutboundMessageSize: 512000
+22704: 16:02:49.139 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+22704: 16:02:49.140 - Adding UDP listener on: 192.168.40.1: 5055 with a listen backlog of: 500
+22704: 16:02:49.140 - Adding UDP listener on: 192.168.133.1: 5055 with a listen backlog of: 500
+22704: 16:02:49.140 - Adding UDP listener on: 192.168.1.100: 5055 with a listen backlog of: 500
+22704: 16:02:49.140 - Adding UDP listener on: 192.168.137.1: 5055 with a listen backlog of: 500
+22704: 16:02:49.140 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+22704: 16:02:49.169 - Service is running...
+23428: 23:42:34.030 - Restarting application: "CarServer" due to file changes
+23428: 23:42:34.030 - Application: "CarServer" restart request (abort existing connections)
+23428: 23:42:34.513 - Taking reference on default app domain
+23428: 23:42:35.071 - Application: "CarServer" started in app domain: 3
+23428: 23:42:35.349 - RequestApplicationStop: 2
+23428: 23:42:35.409 - Application: "CarServer" stopped in app domain: 2 (abort existing connections)
+23428: 23:42:35.409 - Application: "CarServer" restart complete.
+23472: 23:42:35.409 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 23:42:35.419 - Unloading Domain: ApplicationName = 'CarServer', DomainId='2'
+23472: 23:42:35.425 - CManagedHost::OnDomainUnload() - 2

@@ -10,10 +10,11 @@ namespace Assets.Scripts.Photon.Controller
 {
     class LoginController : ControllerBase
     {
-        public LoginController()
+        public override OperationCode OpCode
         {
-            opCode = OperationCode.Login
+            get { return OperationCode.Login; }
         }
+
         public void Login(string userName, string password)
         {
             User user = new User() { UserName = userName, Password = password };
@@ -28,6 +29,7 @@ namespace Assets.Scripts.Photon.Controller
             {
                 case (short)ReturnCode.Success:
                     Debug.Log("登录成功");
+                    LoginDelegate.Instance.LoginSuccess();
                     break;
                 case (short)ReturnCode.Fail:
                     Debug.Log("登录失败");

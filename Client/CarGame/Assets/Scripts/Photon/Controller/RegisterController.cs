@@ -12,10 +12,11 @@ namespace Assets.Scripts.Photon.Controller
 {
     class RegisterController : ControllerBase
     {
-        public RegisterController()
+        public override OperationCode OpCode
         {
-            opCode = OperationCode.Register
+            get { return OperationCode.Register; }
         }
+
         public void Register(string userName, string password)
         {
             User user = new User() { UserName = userName, Password = password };

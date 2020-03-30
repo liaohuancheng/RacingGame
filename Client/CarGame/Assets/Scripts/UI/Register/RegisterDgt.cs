@@ -32,7 +32,7 @@ public class RegisterDgt : MonoBehaviour
             _instance = this;
         else
             Destroy(gameObject);
-        registerController = FindObjectOfType<RegisterController>();
+        registerController = new RegisterController();
     }
 
     public void OnClickRegisterBtn()
@@ -42,12 +42,15 @@ public class RegisterDgt : MonoBehaviour
 
     public void OnClickCancelBtn()
     {
-
+        UIController.Instance.HideUI("RegisterPanelRoot");
+        UIController.Instance.ShowUI("LoginPanelRoot");
     }
 
     public void RegisterSuccess()
     {
         Debug.Log("注册成功");
+        UIController.Instance.HideUI("RegisterPanelRoot");
+        UIController.Instance.ShowUI("RoomLstRoot");
     }
 
     public void RegisterFail()

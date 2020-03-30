@@ -1,10 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using CarCommon.Model;
 using UnityEngine;
 
 public class RoomListModel
 {
-    public List<CarCommon.Model.RoomProperty> RoomPropertyList;
+    public List<RoomProperty> RoomPropertyList { get; set; }
+
     public void OnValueChange()
     {
 

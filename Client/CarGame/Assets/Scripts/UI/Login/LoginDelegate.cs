@@ -50,7 +50,20 @@ public class LoginDelegate : MonoBehaviour
 
     public void OnClickRegisterBtn()
     {
+        UIController.Instance.HideUI("LoginPanelRoot");
+        UIController.Instance.ShowUI("RegisterPanelRoot");
+    }
 
+    public void LoginSuccess()
+    {
+        UIController.Instance.HideUI("LoginPanelRoot");
+        UIController.Instance.ShowUI("RoomLstRoot");
+        GetRoomController.Instance.GetRoomLst();
+    }
+
+    public void LoginFail()
+    {
+        Debug.Log("登录失败");
     }
 
     public void InitServerList(List<CarCommon.Model.ServerProperty> serverLst)

@@ -6,14 +6,9 @@ using LitJson;
 
 public class ServerController : ControllerBase
 {
-    public ServerController()
+    public override OperationCode OpCode
     {
-        opCode = OperationCode.GetServer;
-    }
-    public override void Start()
-    {
-        base.Start();
-        PhotonEngine.Instance.onConnectedToServer += GetServerList;
+        get { return OperationCode.GetServer; }
     }
 
     public override void OnDestroy()

@@ -8,8 +8,9 @@ public class RoomListView : MonoBehaviour
 {
     public GameObject roomCellPre;
     public List<GameObject> RoomCellList;
-    public Dictionary<int,GameObject> RoomCellDic;
     public Transform contentTrans;
+
+    public Dictionary<int, GameObject> RoomCellDic { get; set; }
 
     //public RoomListView()
     //{
@@ -29,6 +30,7 @@ public class RoomListView : MonoBehaviour
         GameObject roomNameObj = roomCellGo.transform.Find("RoomName").gameObject;
         GameObject houseOwerNameObj = roomCellGo.transform.Find("HouseOwerName").gameObject;
         GameObject peopleCountObj = roomCellGo.transform.Find("PeopleCount").gameObject;
+        roomCellGo.GetComponent<RoomCellDgt>().Id = RoomID;
         roomNameObj.GetComponent<Text>().text = roomName;
         houseOwerNameObj.GetComponent<Text>().text = houseOwerName;
         peopleCountObj.GetComponent<Text>().text = peopleCount;

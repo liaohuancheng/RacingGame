@@ -91,7 +91,7 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
         {
             case StatusCode.Connect:
                 isConnected = true;
-                onConnectedToServer();
+                //onConnectedToServer();
                 break;
             default:
                 isConnected = false;
