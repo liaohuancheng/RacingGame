@@ -29,7 +29,9 @@ namespace Assets.Scripts.Photon.Controller
             {
                 case (short)ReturnCode.Success:
                     Debug.Log("登录成功");
-                    LoginDelegate.Instance.LoginSuccess();
+                    User user = ParameterTool.GetParameter<User>(operationResponse.Parameters, ParamaterCode.User);
+                    Debug.Log(user.ID);
+                    LoginDelegate.Instance.LoginSuccess(user);
                     break;
                 case (short)ReturnCode.Fail:
                     Debug.Log("登录失败");

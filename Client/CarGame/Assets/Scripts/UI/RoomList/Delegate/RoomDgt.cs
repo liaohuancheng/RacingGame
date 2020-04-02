@@ -1,4 +1,6 @@
-﻿using CarCommon.Model;
+﻿using Assets.Scripts;
+using Assets.Scripts.Photon.Controller;
+using CarCommon.Model;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,7 +40,7 @@ public class RoomDgt : MonoBehaviour
         roomModel = new RoomModel();
     }
 
-    public void CreateRoomList(List<User> UserLst)
+    public void CreatePlayerLSt(List<User> UserLst)
     {
         if (UserLst == null)
         {
@@ -52,14 +54,15 @@ public class RoomDgt : MonoBehaviour
         }
     }
 
-    public void OnClickEnterBtn()
+    public void OnClickStartGameBtn()
     {
-        Debug.Log("房间号:" + SelectingRoomId);
+        Debug.Log("开始游戏");
     }
 
-    public void OnClickCreateRoomBtn()
+    public void OnClickExitRoomBtn()
     {
-        UIController.Instance.HideUI("RoomLstRoot");
-        UIController.Instance.ShowUI("CreateRoomPanel");
+        RoomController.Instance.ExitRoom(UserInfo.Instance.Id);
+        UIController.Instance.HideUI("RoomRoot");
+        UIController.Instance.ShowUI("RoomLstRoot");
     }
 }

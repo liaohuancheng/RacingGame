@@ -1,0 +1,180 @@
+23428: 00:52:42.137 - Restarting application: "CarServer" due to file changes
+23428: 00:52:42.149 - Application: "CarServer" restart request (abort existing connections)
+23428: 00:52:42.545 - Taking reference on default app domain
+23428: 00:52:42.845 - Application: "CarServer" started in app domain: 11
+23428: 00:52:43.120 - RequestApplicationStop: 10
+23428: 00:52:43.189 - Application: "CarServer" stopped in app domain: 10 (abort existing connections)
+23428: 00:52:43.189 - Application: "CarServer" restart complete.
+23472: 00:52:43.189 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 00:52:43.198 - Unloading Domain: ApplicationName = 'CarServer', DomainId='10'
+23472: 00:52:43.198 - CManagedHost::OnDomainUnload() - 10
+23428: 12:30:13.244 - Restarting application: "CarServer" due to file changes
+23428: 12:30:13.244 - Application: "CarServer" restart request (abort existing connections)
+23428: 12:30:13.589 - Taking reference on default app domain
+23428: 12:30:14.049 - Application: "CarServer" started in app domain: 12
+23428: 12:30:14.278 - RequestApplicationStop: 11
+23428: 12:30:14.333 - Application: "CarServer" stopped in app domain: 11 (abort existing connections)
+23428: 12:30:14.333 - Application: "CarServer" restart complete.
+23472: 12:30:14.333 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 12:30:14.342 - Unloading Domain: ApplicationName = 'CarServer', DomainId='11'
+23472: 12:30:14.342 - CManagedHost::OnDomainUnload() - 11
+23428: 12:40:34.857 - Restarting application: "CarServer" due to file changes
+23428: 12:40:34.857 - Application: "CarServer" restart request (abort existing connections)
+23428: 12:40:35.129 - Taking reference on default app domain
+23428: 12:40:35.427 - Application: "CarServer" started in app domain: 13
+23428: 12:40:35.689 - RequestApplicationStop: 12
+23428: 12:40:35.718 - Application: "CarServer" stopped in app domain: 12 (abort existing connections)
+23428: 12:40:35.718 - Application: "CarServer" restart complete.
+23472: 12:40:35.758 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 12:40:35.765 - Unloading Domain: ApplicationName = 'CarServer', DomainId='12'
+23472: 12:40:35.769 - CManagedHost::OnDomainUnload() - 12
+23428: 12:41:55.670 - Restarting application: "CarServer" due to file changes
+23428: 12:41:55.670 - Application: "CarServer" restart request (abort existing connections)
+23428: 12:41:55.935 - Taking reference on default app domain
+23428: 12:41:56.212 - Application: "CarServer" started in app domain: 14
+23428: 12:41:56.462 - RequestApplicationStop: 13
+23428: 12:41:56.488 - Application: "CarServer" stopped in app domain: 13 (abort existing connections)
+23428: 12:41:56.488 - Application: "CarServer" restart complete.
+23472: 12:41:56.526 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 12:41:56.536 - Unloading Domain: ApplicationName = 'CarServer', DomainId='13'
+23472: 12:41:56.541 - CManagedHost::OnDomainUnload() - 13
+23428: 13:01:47.590 - Restarting application: "CarServer" due to file changes
+23428: 13:01:47.590 - Application: "CarServer" restart request (abort existing connections)
+23428: 13:01:48.266 - Taking reference on default app domain
+23428: 13:01:48.891 - Application: "CarServer" started in app domain: 15
+23428: 13:01:49.538 - RequestApplicationStop: 14
+23428: 13:01:49.566 - Application: "CarServer" stopped in app domain: 14 (abort existing connections)
+23428: 13:01:49.566 - Application: "CarServer" restart complete.
+23472: 13:01:49.616 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 13:01:49.624 - Unloading Domain: ApplicationName = 'CarServer', DomainId='14'
+23472: 13:01:49.629 - CManagedHost::OnDomainUnload() - 14
+23428: 13:03:21.827 - Restarting application: "CarServer" due to file changes
+23428: 13:03:21.827 - Application: "CarServer" restart request (abort existing connections)
+23428: 13:03:22.113 - Taking reference on default app domain
+23428: 13:03:22.414 - Application: "CarServer" started in app domain: 16
+23428: 13:03:22.689 - RequestApplicationStop: 15
+23428: 13:03:22.777 - Application: "CarServer" stopped in app domain: 15 (abort existing connections)
+23472: 13:03:22.777 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23428: 13:03:22.777 - Application: "CarServer" restart complete.
+23468: 13:03:22.787 - Unloading Domain: ApplicationName = 'CarServer', DomainId='15'
+23472: 13:03:22.787 - CManagedHost::OnDomainUnload() - 15
+23428: 13:04:55.453 - Restarting application: "CarServer" due to file changes
+23428: 13:04:55.453 - Application: "CarServer" restart request (abort existing connections)
+23428: 13:04:55.770 - Taking reference on default app domain
+23428: 13:04:56.057 - Application: "CarServer" started in app domain: 17
+23428: 13:04:56.318 - RequestApplicationStop: 16
+23428: 13:04:56.492 - Application: "CarServer" stopped in app domain: 16 (abort existing connections)
+23428: 13:04:56.492 - Application: "CarServer" restart complete.
+23472: 13:04:56.496 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 13:04:56.508 - Unloading Domain: ApplicationName = 'CarServer', DomainId='16'
+23472: 13:04:56.508 - CManagedHost::OnDomainUnload() - 16
+23428: 13:07:24.283 - Restarting application: "CarServer" due to file changes
+23428: 13:07:24.283 - Application: "CarServer" restart request (abort existing connections)
+23428: 13:07:24.660 - Taking reference on default app domain
+23428: 13:07:24.956 - Application: "CarServer" started in app domain: 18
+23428: 13:07:25.382 - RequestApplicationStop: 17
+23428: 13:07:25.416 - Application: "CarServer" stopped in app domain: 17 (abort existing connections)
+23428: 13:07:25.416 - Application: "CarServer" restart complete.
+23472: 13:07:25.472 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 13:07:25.483 - Unloading Domain: ApplicationName = 'CarServer', DomainId='17'
+23472: 13:07:25.489 - CManagedHost::OnDomainUnload() - 17
+23428: 13:09:46.651 - Restarting application: "CarServer" due to file changes
+23428: 13:09:46.651 - Application: "CarServer" restart request (abort existing connections)
+23428: 13:09:46.929 - Taking reference on default app domain
+23428: 13:09:47.169 - Application: "CarServer" started in app domain: 19
+23428: 13:09:47.361 - RequestApplicationStop: 18
+23428: 13:09:47.386 - Application: "CarServer" stopped in app domain: 18 (abort existing connections)
+23428: 13:09:47.386 - Application: "CarServer" restart complete.
+23472: 13:09:47.425 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 13:09:47.434 - Unloading Domain: ApplicationName = 'CarServer', DomainId='18'
+23472: 13:09:47.440 - CManagedHost::OnDomainUnload() - 18
+23428: 13:11:45.395 - Restarting application: "CarServer" due to file changes
+23428: 13:11:45.395 - Application: "CarServer" restart request (abort existing connections)
+23428: 13:11:45.674 - Taking reference on default app domain
+23428: 13:11:45.930 - Application: "CarServer" started in app domain: 20
+23428: 13:11:46.123 - RequestApplicationStop: 19
+23428: 13:11:46.178 - Application: "CarServer" stopped in app domain: 19 (abort existing connections)
+23472: 13:11:46.178 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23428: 13:11:46.178 - Application: "CarServer" restart complete.
+23468: 13:11:46.188 - Unloading Domain: ApplicationName = 'CarServer', DomainId='19'
+23472: 13:11:46.188 - CManagedHost::OnDomainUnload() - 19
+23428: 13:20:09.604 - Restarting application: "CarServer" due to file changes
+23428: 13:20:09.604 - Application: "CarServer" restart request (abort existing connections)
+23428: 13:20:09.875 - Taking reference on default app domain
+23428: 13:20:10.160 - Application: "CarServer" started in app domain: 21
+23428: 13:20:10.668 - RequestApplicationStop: 20
+23428: 13:20:10.727 - Application: "CarServer" stopped in app domain: 20 (abort existing connections)
+23472: 13:20:10.727 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23428: 13:20:10.727 - Application: "CarServer" restart complete.
+23468: 13:20:10.735 - Unloading Domain: ApplicationName = 'CarServer', DomainId='20'
+23472: 13:20:10.738 - CManagedHost::OnDomainUnload() - 20
+16396: 17:06:30.840 - FAILED license server contact - trying next URL.
+16396: 17:06:30.842 - Connect to Photon License Server failed. Trying again later. Allowed days without contact: 2
+22704: 19:07:12.220 - Service is stopped...
+22704: 19:07:12.250 - Server shutting down...
+22704: 19:07:12.250 - Shutdown monitoring enabled, 30000ms before process abort
+22704: 19:07:12.250 - Notifying CLR applications of shutdown...
+22704: 19:07:12.262 - RequestApplicationStop: 21
+22704: 19:07:12.805 - RequestStop: defalt app domain
+22704: 19:07:13.121 - Shutting down WebSocket Outbound Connection Manager...
+22704: 19:07:13.164 - Shutting down TCP Outbound Connection Manager...
+22704: 19:07:13.233 - Shutting down ENet Outbound Connection Manager...
+22704: 19:07:13.239 - Disconnecting all outbound peers...
+22704: 19:07:13.262 - Shutting down ENet host...
+22704: 19:07:13.262 - Disconnecting all peers...
+22704: 19:07:13.262 - Shutting down socket servers...
+22704: 19:07:13.262 - Shutting down ENet thread pool...
+22704: 19:07:13.270 - Shutting down TCP inactivity timers...
+22704: 19:07:13.331 - WaitingForShutdownToComplete: TCP:0.0.0.0:4530
+22704: 19:07:13.331 - OnShutdownCompleted: TCP:0.0.0.0:4530
+22704: 19:07:13.331 - WaitingForShutdownToComplete: UDP:127.0.0.1:5055
+22704: 19:07:13.331 - OnShutdownCompleted: UDP:127.0.0.1:5055
+22704: 19:07:13.331 - WaitingForShutdownToComplete: UDP:192.168.1.100:5055
+22704: 19:07:13.331 - OnShutdownCompleted: UDP:192.168.1.100:5055
+22704: 19:07:13.331 - WaitingForShutdownToComplete: UDP:192.168.133.1:5055
+22704: 19:07:13.331 - OnShutdownCompleted: UDP:192.168.133.1:5055
+22704: 19:07:13.331 - WaitingForShutdownToComplete: UDP:192.168.137.1:5055
+22704: 19:07:13.331 - OnShutdownCompleted: UDP:192.168.137.1:5055
+22704: 19:07:13.331 - WaitingForShutdownToComplete: UDP:192.168.40.1:5055
+22704: 19:07:13.331 - OnShutdownCompleted: UDP:192.168.40.1:5055
+22704: 19:07:13.331 - Shutting down CLR applications...
+22704: 19:07:13.505 - Shutting down business logic thread pool...
+22704: 19:07:13.535 - Shutting down I/O thread pool...
+22704: 19:07:13.536 - Destroying servers
+23472: 19:07:13.537 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+22704: 19:07:13.574 - Destroying WebSocket Outbound Connection Manager
+22704: 19:07:13.582 - Destroying TCP Outbound Connection Manager
+22704: 19:07:13.582 - Destroying TCP inactivity timer
+22704: 19:07:13.582 - Destroying ENet timer wheel
+22704: 19:07:13.608 - Destroying ENet host
+22704: 19:07:13.636 - Destroying ENet outbound host
+22704: 19:07:13.660 - Destroying HTTP inactivity timer
+22704: 19:07:13.660 - Destroying HTTP host
+22704: 19:07:13.660 - Destroying HTTP Chunk host
+22704: 19:07:13.660 - Flushing ENET buffer allocator...
+22704: 19:07:13.662 - Flushing TCP buffer handle allocator...
+22704: 19:07:13.662 - Flushing stream socket allocator...
+22704: 19:07:13.662 - Flushing inbound datagram socket allocator...
+22704: 19:07:13.664 - Flushing outbound datagram socket allocator...
+22704: 19:07:13.664 - Destroying CLR dispatcher
+22704: 19:07:13.664 - Destroying CLR applications
+22704: 19:07:13.665 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+23468: 19:07:13.821 - Unloading Domain: ApplicationName = 'CarServer', DomainId='21'
+23472: 19:07:14.445 - CManagedHost::OnDomainUnload() - 21
+22704: 19:07:17.742 - ~CCLRApplicationCollection() - Done. All objects released
+22704: 19:07:17.758 - ~CManagedHost() - Release default app domain
+22704: 19:07:17.758 - CManagedHost::OnDomainUnload() - 1
+22704: 19:07:17.758 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+22704: 19:07:17.815 - ~CManagedHost
+22704: 19:07:17.815 - Destroying ENet thread pool
+22704: 19:07:17.815 - Destroying Business logic thread pool
+22704: 19:07:17.815 - Destroying I/O thread pool
+22704: 19:07:17.815 - Destroying ENet buffer allocator
+22704: 19:07:17.815 - Destroying TCP buffer allocator
+22704: 19:07:17.815 - Destroying TCP socket allocator
+22704: 19:07:17.815 - Destroying ENet inbound socket allocator
+22704: 19:07:17.815 - Destroying ENet outbound socket allocator
+22704: 19:07:17.815 - Destroying shared datagram flow control data
+22704: 19:07:17.904 - Shutdown complete...
+22704: 19:07:17.905 - Service shutting down
+22704: 19:07:18.060 - Service shut down complete

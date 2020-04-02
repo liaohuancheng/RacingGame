@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Photon.Controller;
+﻿using Assets.Scripts;
+using Assets.Scripts.Photon.Controller;
 using CarCommon.Model;
 using System.Collections;
 using System.Collections.Generic;
@@ -56,11 +57,14 @@ public class RoomListDgt : MonoBehaviour
 
     public void OnClickEnterBtn()
     {
-        Debug.Log("房间号:" + SelectingRoomId);
+        RoomController.Instance.EnterRoom(UserInfo.Instance.Id, SelectingRoomId);
+        UIController.Instance.HideUI("RoomLstRoot");
+        UIController.Instance.ShowUI("RoomRoot");
     }
 
     public void OnClickCreateRoomBtn()
     {
+
         UIController.Instance.HideUI("RoomLstRoot");
         UIController.Instance.ShowUI("CreateRoomPanel");
     }

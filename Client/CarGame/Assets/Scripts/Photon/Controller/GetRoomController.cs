@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Assets.Scripts.Tool;
 using CarCommon;
 using CarCommon.Model;
 using ExitGames.Client.Photon;
@@ -31,7 +30,7 @@ namespace Assets.Scripts.Photon.Controller
 
         public override void OnOperationResponse(OperationResponse operationResponse)
         {
-            List<RoomProperty> roomList =  ParamaterTool.GetParameter<List<RoomProperty>>(operationResponse.Parameters, ParamaterCode.RoomList);
+            List<RoomProperty> roomList =  ParameterTool.GetParameter<List<RoomProperty>>(operationResponse.Parameters, ParamaterCode.RoomList);
             RoomListDgt.Instance.CreateRoomList(roomList);
         }
     }

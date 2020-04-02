@@ -1,0 +1,40 @@
+23428: 16:22:22.794 - Restarting application: "CarServer" due to file changes
+23428: 16:22:22.802 - Application: "CarServer" restart request (abort existing connections)
+23428: 16:22:23.360 - Taking reference on default app domain
+23428: 16:22:23.997 - Application: "CarServer" started in app domain: 7
+23428: 16:22:24.247 - RequestApplicationStop: 6
+23428: 16:22:24.374 - Application: "CarServer" stopped in app domain: 6 (abort existing connections)
+23428: 16:22:24.374 - Application: "CarServer" restart complete.
+23472: 16:22:24.378 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 16:22:24.390 - Unloading Domain: ApplicationName = 'CarServer', DomainId='6'
+23472: 16:22:24.392 - CManagedHost::OnDomainUnload() - 6
+23428: 22:03:08.444 - Restarting application: "CarServer" due to file changes
+23428: 22:03:08.444 - Application: "CarServer" restart request (abort existing connections)
+23428: 22:03:09.256 - Taking reference on default app domain
+23428: 22:03:10.356 - Application: "CarServer" started in app domain: 8
+23428: 22:03:10.906 - RequestApplicationStop: 7
+23428: 22:03:10.994 - Application: "CarServer" stopped in app domain: 7 (abort existing connections)
+23428: 22:03:10.994 - Application: "CarServer" restart complete.
+23472: 22:03:10.994 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 22:03:11.004 - Unloading Domain: ApplicationName = 'CarServer', DomainId='7'
+23472: 22:03:11.005 - CManagedHost::OnDomainUnload() - 7
+23428: 22:11:21.306 - Restarting application: "CarServer" due to file changes
+23428: 22:11:21.306 - Application: "CarServer" restart request (abort existing connections)
+23428: 22:11:21.764 - Taking reference on default app domain
+23428: 22:11:22.498 - Application: "CarServer" started in app domain: 9
+23428: 22:11:22.802 - RequestApplicationStop: 8
+23428: 22:11:22.863 - Application: "CarServer" stopped in app domain: 8 (abort existing connections)
+23428: 22:11:22.863 - Application: "CarServer" restart complete.
+23472: 22:11:22.863 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 22:11:22.871 - Unloading Domain: ApplicationName = 'CarServer', DomainId='8'
+23472: 22:11:22.878 - CManagedHost::OnDomainUnload() - 8
+23428: 22:28:48.905 - Restarting application: "CarServer" due to file changes
+23428: 22:28:48.905 - Application: "CarServer" restart request (abort existing connections)
+23428: 22:28:49.342 - Taking reference on default app domain
+23428: 22:28:49.808 - Application: "CarServer" started in app domain: 10
+23428: 22:28:50.304 - RequestApplicationStop: 9
+23428: 22:28:50.418 - Application: "CarServer" stopped in app domain: 9 (abort existing connections)
+23428: 22:28:50.418 - Application: "CarServer" restart complete.
+23472: 22:28:50.556 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+23468: 22:28:50.567 - Unloading Domain: ApplicationName = 'CarServer', DomainId='9'
+23472: 22:28:50.570 - CManagedHost::OnDomainUnload() - 9

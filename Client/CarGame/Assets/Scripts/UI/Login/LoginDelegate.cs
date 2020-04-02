@@ -1,5 +1,7 @@
-﻿using Assets.Scripts.Photon.Controller;
+﻿using Assets.Scripts;
+using Assets.Scripts.Photon.Controller;
 using Assets.Scripts.UI.Login;
+using CarCommon.Model;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -54,10 +56,12 @@ public class LoginDelegate : MonoBehaviour
         UIController.Instance.ShowUI("RegisterPanelRoot");
     }
 
-    public void LoginSuccess()
+    public void LoginSuccess(User user)
     {
         UIController.Instance.HideUI("LoginPanelRoot");
         UIController.Instance.ShowUI("RoomLstRoot");
+        UserInfo.Instance.Id = user.ID;
+        UserInfo.Instance.UserName = user.UserName;
         GetRoomController.Instance.GetRoomLst();
     }
 
