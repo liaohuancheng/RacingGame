@@ -18,14 +18,14 @@ public class RoomView : MonoBehaviour
         PlayerLst = new List<GameObject>();
     }
 
-    public void AddPlayerCell(string playerName, string level)
+    public void AddPlayerCell(string playerName, int level)
     {
 
         GameObject PlayerPropGo = GameObject.Instantiate(roomCellPre, contentTrans);
         GameObject roomNameObj = PlayerPropGo.transform.Find("PlayerName").gameObject;
         GameObject LevelText = PlayerPropGo.transform.Find("Level").gameObject;
         roomNameObj.GetComponent<Text>().text = playerName;
-        LevelText.GetComponent<Text>().text = level;
+        LevelText.GetComponent<Text>().text = level.ToString();
         PlayerLst.Add(PlayerPropGo);
     }
 
@@ -35,10 +35,11 @@ public class RoomView : MonoBehaviour
         {
             return;
         }
-        foreach (var item in PlayerLst)
+        
+        for (int i = 0; i < PlayerLst.Count; i++)
         {
-            GameObject PlayerPropGo = item;
-            PlayerLst.Remove(PlayerPropGo);
+            GameObject PlayerPropGo = PlayerLst[i];
+            PlayerLst.Remove(PlayerLst[i]);
             Destroy(PlayerPropGo);
         }
 

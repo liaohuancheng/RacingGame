@@ -41,7 +41,7 @@ public class RoomDgt : MonoBehaviour
         roomModel = new RoomModel();
     }
 
-    public void CreatePlayerLSt(IList<User> UserLst)
+    public void CreatePlayerLSt(List<User> UserLst)
     {
         if (UserLst == null)
         {

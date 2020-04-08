@@ -16,18 +16,16 @@ namespace Assets.Scripts.Photon.Controller
 
         public void CreateRoom(string roomName)
         {
-            RoomProperty roomProperty = new RoomProperty() { RoomOwnerName = "Test",RoomName = roomName};
-            string json = JsonMapper.ToJson(roomProperty);
             Dictionary<byte, object> parameters = new Dictionary<byte, object>();
-            parameters.Add((byte)ParamaterCode.RoomProperty, json);
+            ParameterTool.AddParameter(parameters, ParamaterCode.First, roomName, false);
             PhotonEngine.Instance.SendRequest(OperationCode.CreateRoom, parameters);
         }
         public override void OnOperationResponse(OperationResponse operationResponse)
         {
             UIController.Instance.HideUI("CreateRoomPanel");
-            UIController.Instance.ShowUI("RoomLstRoot");
-            GetRoomController.Instance.GetRoomLst();
-
+            UIController.Instance.ShowUI("RoomRoot");
+            var usrLst = ParameterTool.GetParameter<List<User>>(operationResponse.Parameters, ParamaterCode.UserLst);
+            RoomDgt.Instance.CreatePlayerLSt(usrLst);
         }
     }
 }

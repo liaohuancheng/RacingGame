@@ -49,13 +49,14 @@ public class RoomListDgt : MonoBehaviour
         }
         roomListModel.RoomPropertyList = roomLst;
         roomListView.RemoveRoomCell();
-        foreach (var roomCell in roomLst)
+        for (int i =0; i<roomLst.Count; i++)
         {
-            roomListView.AddRoomCell(roomCell.RoomName, roomCell.RoomOwnerName, roomCell.Count.ToString(), roomCell.ID);
+            var roomCell = roomLst[i];
+            roomListView.AddRoomCell(roomCell.RoomName, roomCell.RoomOwnerName, roomCell.Count.ToString(), i);
         }
     }
 
-    public void EnterSuccess(IList<User> users)
+    public void EnterSuccess(List<User> users)
     {
         UIController.Instance.HideUI("RoomLstRoot");
         UIController.Instance.ShowUI("RoomRoot");

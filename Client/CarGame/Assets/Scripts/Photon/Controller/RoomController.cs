@@ -51,6 +51,7 @@ namespace Assets.Scripts.Photon.Controller
                     RoomListDgt.Instance.EnterSuccess(users);
                     break;
                 case RoomOperationCode.ExitRoom:
+                    GetRoomController.Instance.GetRoomLst();
                     break;
             }
         }
