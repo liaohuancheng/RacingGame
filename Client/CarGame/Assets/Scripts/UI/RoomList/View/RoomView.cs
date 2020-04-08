@@ -11,7 +11,7 @@ public class RoomView : MonoBehaviour
 
     public List<GameObject> PlayerLst { get; set; }
 
-    public void Start()
+    public void Awake()
     {
         contentTrans = GameObject.Find("RoomContent").transform;
         roomCellPre = (GameObject)Resources.Load("Prefabs/UI/PlayerProp");
@@ -31,6 +31,10 @@ public class RoomView : MonoBehaviour
 
     public void RemovePlayerCell()
     {
+        if(PlayerLst == null)
+        {
+            return;
+        }
         foreach (var item in PlayerLst)
         {
             GameObject PlayerPropGo = item;

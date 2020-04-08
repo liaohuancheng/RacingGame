@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using CarCommon;
+using CarCommon.Model;
 using ExitGames.Client.Photon;
 
 namespace Assets.Scripts.Photon.Controller
@@ -46,6 +47,8 @@ namespace Assets.Scripts.Photon.Controller
             switch (roomOperationCode)
             {
                 case RoomOperationCode.EnterRoom:
+                    var users = ParameterTool.GetParameter<List<User>>(operationResponse.Parameters, ParamaterCode.UserLst);
+                    RoomListDgt.Instance.EnterSuccess(users);
                     break;
                 case RoomOperationCode.ExitRoom:
                     break;

@@ -48,6 +48,7 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
     void Awake()
     {
         _instance = this;
+        DontDestroyOnLoad(_instance);
         peer = new PhotonPeer(this, protocol);
         peer.Connect(serverAddress, applicationName);
     }

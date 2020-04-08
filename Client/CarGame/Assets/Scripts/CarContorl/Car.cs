@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Photon.Controller;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,11 +31,25 @@ public class Car : MonoBehaviour
     private Rigidbody rigibody;
     public int reverseTorque;
 
+    private Vector3 lastPostion = Vector3.zero;
+    private float moveOffset = 0.1f;
+
     // Start is called before the first frame update
     void Start()
     {
         initProperty();
         rigidbody = GetComponent<Rigidbody>();
+        InvokeRepeating("SyncPosition", 3, 1 / 15f);
+    }
+
+    void SyncPosition()
+    {
+        if(Vector3.Distance(transform.position, lastPostion) > moveOffset)
+        {
+            lastPostion = transform.position;
+            SyncPositionController.Instance.SendPosition(transform.position);
+
+        }
     }
 
     private void initProperty()//初始化各个物件

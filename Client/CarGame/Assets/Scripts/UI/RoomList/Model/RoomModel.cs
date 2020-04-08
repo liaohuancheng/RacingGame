@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class RoomModel
 {
-    public List<User>  UserLst{ get; set; }
+    public IList<User>  UserLst{ get; set; }
 
     public void OnValueChange()
     {

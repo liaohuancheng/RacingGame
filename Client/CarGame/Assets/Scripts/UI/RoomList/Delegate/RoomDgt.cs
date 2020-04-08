@@ -4,6 +4,7 @@ using CarCommon.Model;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RoomDgt : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class RoomDgt : MonoBehaviour
         roomModel = new RoomModel();
     }
 
-    public void CreatePlayerLSt(List<User> UserLst)
+    public void CreatePlayerLSt(IList<User> UserLst)
     {
         if (UserLst == null)
         {
@@ -57,9 +58,14 @@ public class RoomDgt : MonoBehaviour
     public void OnClickStartGameBtn()
     {
         Debug.Log("开始游戏");
+        UIController.Instance.HideUI("RoomRoot");
+        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
+        ProgressBar.Instance.Show(operation);
     }
 
-    public void OnClickExitRoomBtn()
+
+    
+        public void OnClickExitRoomBtn()
     {
         RoomController.Instance.ExitRoom(UserInfo.Instance.Id);
         UIController.Instance.HideUI("RoomRoot");

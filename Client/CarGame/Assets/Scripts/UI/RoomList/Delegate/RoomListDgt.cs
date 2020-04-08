@@ -55,11 +55,16 @@ public class RoomListDgt : MonoBehaviour
         }
     }
 
+    public void EnterSuccess(IList<User> users)
+    {
+        UIController.Instance.HideUI("RoomLstRoot");
+        UIController.Instance.ShowUI("RoomRoot");
+        RoomDgt.Instance.CreatePlayerLSt(users);
+    }
+
     public void OnClickEnterBtn()
     {
         RoomController.Instance.EnterRoom(UserInfo.Instance.Id, SelectingRoomId);
-        UIController.Instance.HideUI("RoomLstRoot");
-        UIController.Instance.ShowUI("RoomRoot");
     }
 
     public void OnClickCreateRoomBtn()
