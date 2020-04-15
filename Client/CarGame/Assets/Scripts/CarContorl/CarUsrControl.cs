@@ -12,7 +12,7 @@ public class CarUsrControl : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void control()
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");

@@ -2,6 +2,7 @@
 using CarCommon;
 using CarCommon.Model;
 using ExitGames.Client.Photon;
+using UnityEngine;
 
 namespace Assets.Scripts.Photon.Controller
 {
@@ -41,6 +42,15 @@ namespace Assets.Scripts.Photon.Controller
             PhotonEngine.Instance.SendRequest(OperationCode.Room, paramaters);
         }
 
+        public void StartFight()
+        {
+            Dictionary<byte, object> paramaters = new Dictionary<byte, object>();
+            ParameterTool.AddParameter(paramaters, ParamaterCode.RoomOperationCode, RoomOperationCode.StartFight, false);
+            PhotonEngine.Instance.SendRequest(OperationCode.Room, paramaters);
+        }
+
+
+
         public override void OnOperationResponse(OperationResponse operationResponse)
         {
             var roomOperationCode = ParameterTool.GetParameter<RoomOperationCode>(operationResponse.Parameters, ParamaterCode.RoomOperationCode, false);
@@ -55,5 +65,6 @@ namespace Assets.Scripts.Photon.Controller
                     break;
             }
         }
+
     }
 }

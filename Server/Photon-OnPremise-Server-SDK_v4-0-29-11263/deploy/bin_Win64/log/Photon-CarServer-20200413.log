@@ -1,0 +1,666 @@
+4400: 11:05:23.422 - ---
+4400: 11:05:23.422 - Service: "Photon Socket Server" starting
+4400: 11:05:23.423 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+4400: 11:05:23.424 - Will produce at most: 10 crash dumps
+4400: 11:05:23.424 - Action: run as exe
+4400: 11:05:23.424 - Server Starting...
+4400: 11:05:23.424 -    Tick count: 1509390 (wraps in: 49.6928 days)
+4400: 11:05:23.424 - Tick count 64: 1509390
+4400: 11:05:23.425 - Photon Version: 4.0.28.2962
+4400: 11:05:23.425 - PID: 8152
+4400: 11:05:23.425 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+4400: 11:05:23.425 - Will NOT log unimportant exceptions
+4400: 11:05:23.428 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+4400: 11:05:23.428 - Shutdown timeout enabled: 30000ms
+4400: 11:05:23.428 - Starting I/O thread pool with 2 threads
+4400: 11:05:23.428 - Using Standard allocator
+4400: 11:05:23.428 - Max message size: 512000
+4400: 11:05:23.428 - Starting business logic thread pool with the following settings
+4400: 11:05:23.428 - InitialThreads: 4 threads
+4400: 11:05:23.428 - MinThreads: 4 threads
+4400: 11:05:23.428 - Thread pool is fixed size
+4400: 11:05:23.428 - Starting ENet thread pool with the following settings
+4400: 11:05:23.428 - InitialThreads: 2 threads
+4400: 11:05:23.428 - MinThreads: 2 threads
+4400: 11:05:23.428 - Thread pool is fixed size
+4400: 11:05:23.428 - OnlyDispatchTimers: False
+4400: 11:05:23.428 - S2S: flow control: Max pending writes: 50
+4400: 11:05:23.428 - S2S: flow control: Max queued buffers: 200
+4400: 11:05:23.428 - S2S: flow control: Max pending writes MUX: 500
+4400: 11:05:23.428 - S2S: flow control: Max queued buffers MUX: 2000
+4400: 11:05:23.428 - S2S: MaxInboundMessageSize: 512000
+4400: 11:05:23.429 - S2S: MaxOutboundMessageSize: 512000
+4400: 11:05:23.429 - S2S: No inactivity timeout
+4400: 11:05:23.433 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:23.433 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:23.433 - WebSocket S2S: MaxInboundMessageSize: 512000
+4400: 11:05:23.433 - WebSocket S2S: MaxOutboundMessageSize: 512000
+4400: 11:05:23.433 - WebSocket S2S: No inactivity timeout
+4400: 11:05:23.433 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:23.433 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+4400: 11:05:23.433 - Per peer bandwidth limit
+4400: 11:05:23.433 - Transmit Rate Limit: 256 KB/Sec
+4400: 11:05:23.433 - Limit period: 200ms
+4400: 11:05:23.433 - Limit per period: 52428 bytes
+4400: 11:05:23.433 - Max queued data for transmission per peer: 512000 bytes
+4400: 11:05:23.433 - Minimum retransmit timeout: 200
+4400: 11:05:23.433 - No Maximum retransmit timeout
+4400: 11:05:23.433 - Minimum ENet timeout: 5000ms
+4400: 11:05:23.433 - Maximum ENet timeout: 30000ms
+4400: 11:05:23.433 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+4400: 11:05:23.433 - No RTT ACK adjustment timeout
+4400: 11:05:23.433 - Outbound ENet: MaxInboundMessageSize: 512000
+4400: 11:05:23.433 - Outbound ENet: MaxOutboundMessageSize: 512000
+4400: 11:05:23.433 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:23.435 - GetRuntime - About to load CLR - versions available:
+4400: 11:05:23.435 - v2.0.50727
+4400: 11:05:23.435 - v4.0.30319
+4400: 11:05:23.435 - Configuration requests: "v2.0.50727"
+4400: 11:05:23.435 - About to load version: "v2.0.50727"
+4400: 11:05:23.441 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+4400: 11:05:23.441 - CLRBaseDirectory set to "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy"
+4400: 11:05:23.441 - Optimising event broadcast for 20 or more peers
+4400: 11:05:23.442 - Start: About to load CLR - versions available:
+4400: 11:05:23.442 - v2.0.50727
+4400: 11:05:23.442 - v4.0.30319
+4400: 11:05:23.442 - No preference in configuration file, will load latest.
+4400: 11:05:23.442 - About to load version: "v4.0.30319"
+4400: 11:05:23.443 - Loaded version: "v4.0.30319"
+4400: 11:05:23.653 - Photon host runtime loaded
+4400: 11:05:25.718 - License is valid.
+4400: 11:05:25.718 - Licensed for 100 concurrent connections.
+4400: 11:05:25.718 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+4400: 11:05:25.718 - ENet: Per peer bandwidth limit
+4400: 11:05:25.718 - ENet: Transmit Rate Limit: 256 KB/Sec
+4400: 11:05:25.718 - ENet: Limit period: 200ms
+4400: 11:05:25.718 - ENet: Limit per period: 52428 bytes
+4400: 11:05:25.718 - ENet: Max queued data for transmission per peer: 512000 bytes
+4400: 11:05:25.718 - ENet: Minimum retransmit timeout: 200
+4400: 11:05:25.718 - No Maximum retransmit timeout
+4400: 11:05:25.718 - ENet: Minimum timeout: 5000ms
+4400: 11:05:25.718 - ENet: Maximum timeout: 30000ms
+4400: 11:05:25.718 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+4400: 11:05:25.718 - No RTT ACK adjustment timeout
+4400: 11:05:25.718 - About to load application: CarServer from CarServer
+4400: 11:05:25.718 - Auto restart is enabled for application, existing connections will be terminated during restart
+4400: 11:05:25.718 - Application will restart 1000ms after the last change detected
+4400: 11:05:25.718 - Application will restart if files matching the following are changed: "dll;config"
+4400: 11:05:25.718 - Application will NOT restart if files matching the following are changed: "log4net.config"
+4400: 11:05:26.131 - Taking reference on default app domain
+4400: 11:05:26.559 - Application: "CarServer" started in app domain: 2
+4400: 11:05:26.561 - Adding TCP listener on: 0.0.0.0: 4530 with a listen backlog of: 150
+4400: 11:05:26.561 - TCP inactivity timeout: 10000ms
+4400: 11:05:26.561 - TCP disconnect timeout: 120000ms
+4400: 11:05:26.561 - MaxInboundMessageSize: 512000
+4400: 11:05:26.561 - MaxOutboundMessageSize: 512000
+4400: 11:05:26.561 - Forcing all applications ids to: "CarServer"
+4400: 11:05:26.567 - Serving policy file requests from: "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\Policy\assets\socket-policy.xml"
+4400: 11:05:26.569 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:26.572 - Forcing all applications ids to: "CarServer"
+4400: 11:05:26.572 - MaxInboundMessageSize: 512000
+4400: 11:05:26.572 - MaxOutboundMessageSize: 512000
+4400: 11:05:26.572 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+4400: 11:05:26.573 - Adding UDP listener on: 192.168.40.1: 5055 with a listen backlog of: 500
+4400: 11:05:26.573 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:26.574 - Adding UDP listener on: 192.168.133.1: 5055 with a listen backlog of: 500
+4400: 11:05:26.574 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:26.574 - Adding UDP listener on: 192.168.1.100: 5055 with a listen backlog of: 500
+4400: 11:05:26.574 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:26.574 - Adding UDP listener on: 192.168.137.1: 5055 with a listen backlog of: 500
+4400: 11:05:26.574 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:26.574 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+4400: 11:05:26.574 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+4400: 11:05:26.628 - Service is running...
+10772: 11:34:36.477 - Restarting application: "CarServer" due to file changes
+10772: 11:34:36.477 - Application: "CarServer" restart request (abort existing connections)
+10772: 11:34:36.706 - Taking reference on default app domain
+10772: 11:34:36.933 - Application: "CarServer" started in app domain: 3
+10772: 11:34:37.083 - RequestApplicationStop: 2
+10772: 11:34:37.103 - Application: "CarServer" stopped in app domain: 2 (abort existing connections)
+10772: 11:34:37.103 - Application: "CarServer" restart complete.
+11744: 11:34:37.131 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+6560: 11:34:37.140 - Unloading Domain: ApplicationName = 'CarServer', DomainId='2'
+11744: 11:34:37.144 - CManagedHost::OnDomainUnload() - 2
+4400: 19:40:15.254 - Service is stopped...
+4400: 19:40:15.255 - Server shutting down...
+4400: 19:40:15.255 - Shutdown monitoring enabled, 30000ms before process abort
+4400: 19:40:15.256 - Notifying CLR applications of shutdown...
+4400: 19:40:15.256 - RequestApplicationStop: 3
+4400: 19:40:15.286 - RequestStop: defalt app domain
+4400: 19:40:15.301 - Shutting down WebSocket Outbound Connection Manager...
+4400: 19:40:15.303 - Shutting down TCP Outbound Connection Manager...
+4400: 19:40:15.305 - Shutting down ENet Outbound Connection Manager...
+4400: 19:40:15.305 - Disconnecting all outbound peers...
+4400: 19:40:15.306 - Shutting down ENet host...
+4400: 19:40:15.306 - Disconnecting all peers...
+4400: 19:40:15.306 - Shutting down socket servers...
+4400: 19:40:15.306 - Shutting down ENet thread pool...
+4400: 19:40:15.308 - Shutting down TCP inactivity timers...
+4400: 19:40:15.309 - WaitingForShutdownToComplete: TCP:0.0.0.0:4530
+4400: 19:40:15.309 - OnShutdownCompleted: TCP:0.0.0.0:4530
+4400: 19:40:15.309 - WaitingForShutdownToComplete: UDP:127.0.0.1:5055
+4400: 19:40:15.309 - OnShutdownCompleted: UDP:127.0.0.1:5055
+4400: 19:40:15.309 - WaitingForShutdownToComplete: UDP:192.168.1.100:5055
+4400: 19:40:15.309 - OnShutdownCompleted: UDP:192.168.1.100:5055
+4400: 19:40:15.309 - WaitingForShutdownToComplete: UDP:192.168.133.1:5055
+4400: 19:40:15.309 - OnShutdownCompleted: UDP:192.168.133.1:5055
+4400: 19:40:15.309 - WaitingForShutdownToComplete: UDP:192.168.137.1:5055
+4400: 19:40:15.309 - OnShutdownCompleted: UDP:192.168.137.1:5055
+4400: 19:40:15.309 - WaitingForShutdownToComplete: UDP:192.168.40.1:5055
+4400: 19:40:15.309 - OnShutdownCompleted: UDP:192.168.40.1:5055
+4400: 19:40:15.310 - Shutting down CLR applications...
+4400: 19:40:15.347 - Shutting down business logic thread pool...
+11744: 19:40:15.347 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+4400: 19:40:15.347 - Shutting down I/O thread pool...
+4400: 19:40:15.348 - Destroying servers
+4400: 19:40:15.349 - Destroying WebSocket Outbound Connection Manager
+4400: 19:40:15.349 - Destroying TCP Outbound Connection Manager
+4400: 19:40:15.349 - Destroying TCP inactivity timer
+4400: 19:40:15.349 - Destroying ENet timer wheel
+4400: 19:40:15.349 - Destroying ENet host
+4400: 19:40:15.355 - Destroying ENet outbound host
+4400: 19:40:15.355 - Destroying HTTP inactivity timer
+4400: 19:40:15.355 - Destroying HTTP host
+4400: 19:40:15.355 - Destroying HTTP Chunk host
+4400: 19:40:15.355 - Flushing ENET buffer allocator...
+4400: 19:40:15.358 - Flushing TCP buffer handle allocator...
+4400: 19:40:15.358 - Flushing stream socket allocator...
+4400: 19:40:15.358 - Flushing inbound datagram socket allocator...
+4400: 19:40:15.359 - Flushing outbound datagram socket allocator...
+4400: 19:40:15.359 - Destroying CLR dispatcher
+4400: 19:40:15.360 - Destroying CLR applications
+4400: 19:40:15.360 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+6560: 19:40:15.367 - Unloading Domain: ApplicationName = 'CarServer', DomainId='3'
+11744: 19:40:15.374 - CManagedHost::OnDomainUnload() - 3
+4400: 19:40:15.463 - ~CCLRApplicationCollection() - Done. All objects released
+4400: 19:40:15.464 - ~CManagedHost() - Release default app domain
+4400: 19:40:15.464 - CManagedHost::OnDomainUnload() - 1
+4400: 19:40:15.464 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+4400: 19:40:15.465 - ~CManagedHost
+4400: 19:40:15.465 - Destroying ENet thread pool
+4400: 19:40:15.465 - Destroying Business logic thread pool
+4400: 19:40:15.465 - Destroying I/O thread pool
+4400: 19:40:15.465 - Destroying ENet buffer allocator
+4400: 19:40:15.465 - Destroying TCP buffer allocator
+4400: 19:40:15.465 - Destroying TCP socket allocator
+4400: 19:40:15.465 - Destroying ENet inbound socket allocator
+4400: 19:40:15.465 - Destroying ENet outbound socket allocator
+4400: 19:40:15.465 - Destroying shared datagram flow control data
+4400: 19:40:15.471 - Shutdown complete...
+4400: 19:40:15.472 - Service shutting down
+4400: 19:40:15.476 - Service shut down complete
+20928: 19:40:17.734 - ---
+20928: 19:40:17.735 - Service: "Photon Socket Server" starting
+20928: 19:40:17.735 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+20928: 19:40:17.738 - Will produce at most: 10 crash dumps
+20928: 19:40:17.738 - Action: run as exe
+20928: 19:40:17.738 - Server Starting...
+20928: 19:40:17.738 -    Tick count: 32400765 (wraps in: 49.3353 days)
+20928: 19:40:17.738 - Tick count 64: 32400765
+20928: 19:40:17.738 - Photon Version: 4.0.28.2962
+20928: 19:40:17.738 - PID: 22032
+20928: 19:40:17.738 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+20928: 19:40:17.739 - Will NOT log unimportant exceptions
+20928: 19:40:17.741 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+20928: 19:40:17.741 - Shutdown timeout enabled: 30000ms
+20928: 19:40:17.741 - Starting I/O thread pool with 2 threads
+20928: 19:40:17.741 - Using Standard allocator
+20928: 19:40:17.741 - Max message size: 512000
+20928: 19:40:17.741 - Starting business logic thread pool with the following settings
+20928: 19:40:17.741 - InitialThreads: 4 threads
+20928: 19:40:17.741 - MinThreads: 4 threads
+20928: 19:40:17.741 - Thread pool is fixed size
+20928: 19:40:17.742 - Starting ENet thread pool with the following settings
+20928: 19:40:17.742 - InitialThreads: 2 threads
+20928: 19:40:17.742 - MinThreads: 2 threads
+20928: 19:40:17.742 - Thread pool is fixed size
+20928: 19:40:17.742 - OnlyDispatchTimers: False
+20928: 19:40:17.742 - S2S: flow control: Max pending writes: 50
+20928: 19:40:17.742 - S2S: flow control: Max queued buffers: 200
+20928: 19:40:17.742 - S2S: flow control: Max pending writes MUX: 500
+20928: 19:40:17.742 - S2S: flow control: Max queued buffers MUX: 2000
+20928: 19:40:17.742 - S2S: MaxInboundMessageSize: 512000
+20928: 19:40:17.742 - S2S: MaxOutboundMessageSize: 512000
+20928: 19:40:17.742 - S2S: No inactivity timeout
+20928: 19:40:17.747 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:17.747 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:17.747 - WebSocket S2S: MaxInboundMessageSize: 512000
+20928: 19:40:17.747 - WebSocket S2S: MaxOutboundMessageSize: 512000
+20928: 19:40:17.747 - WebSocket S2S: No inactivity timeout
+20928: 19:40:17.747 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:17.747 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+20928: 19:40:17.747 - Per peer bandwidth limit
+20928: 19:40:17.747 - Transmit Rate Limit: 256 KB/Sec
+20928: 19:40:17.747 - Limit period: 200ms
+20928: 19:40:17.747 - Limit per period: 52428 bytes
+20928: 19:40:17.747 - Max queued data for transmission per peer: 512000 bytes
+20928: 19:40:17.747 - Minimum retransmit timeout: 200
+20928: 19:40:17.747 - No Maximum retransmit timeout
+20928: 19:40:17.747 - Minimum ENet timeout: 5000ms
+20928: 19:40:17.747 - Maximum ENet timeout: 30000ms
+20928: 19:40:17.747 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+20928: 19:40:17.747 - No RTT ACK adjustment timeout
+20928: 19:40:17.747 - Outbound ENet: MaxInboundMessageSize: 512000
+20928: 19:40:17.747 - Outbound ENet: MaxOutboundMessageSize: 512000
+20928: 19:40:17.747 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:17.797 - GetRuntime - About to load CLR - versions available:
+20928: 19:40:17.797 - v2.0.50727
+20928: 19:40:17.797 - v4.0.30319
+20928: 19:40:17.797 - Configuration requests: "v2.0.50727"
+20928: 19:40:17.797 - About to load version: "v2.0.50727"
+20928: 19:40:17.809 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+20928: 19:40:17.809 - CLRBaseDirectory set to "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy"
+20928: 19:40:17.809 - Optimising event broadcast for 20 or more peers
+20928: 19:40:17.810 - Start: About to load CLR - versions available:
+20928: 19:40:17.810 - v2.0.50727
+20928: 19:40:17.810 - v4.0.30319
+20928: 19:40:17.810 - No preference in configuration file, will load latest.
+20928: 19:40:17.810 - About to load version: "v4.0.30319"
+20928: 19:40:17.812 - Loaded version: "v4.0.30319"
+20928: 19:40:18.239 - Photon host runtime loaded
+20928: 19:40:21.352 - License is valid.
+20928: 19:40:21.352 - Licensed for 100 concurrent connections.
+20928: 19:40:21.352 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+20928: 19:40:21.352 - ENet: Per peer bandwidth limit
+20928: 19:40:21.352 - ENet: Transmit Rate Limit: 256 KB/Sec
+20928: 19:40:21.352 - ENet: Limit period: 200ms
+20928: 19:40:21.352 - ENet: Limit per period: 52428 bytes
+20928: 19:40:21.352 - ENet: Max queued data for transmission per peer: 512000 bytes
+20928: 19:40:21.352 - ENet: Minimum retransmit timeout: 200
+20928: 19:40:21.352 - No Maximum retransmit timeout
+20928: 19:40:21.352 - ENet: Minimum timeout: 5000ms
+20928: 19:40:21.352 - ENet: Maximum timeout: 30000ms
+20928: 19:40:21.352 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+20928: 19:40:21.352 - No RTT ACK adjustment timeout
+20928: 19:40:21.352 - About to load application: CarServer from CarServer
+20928: 19:40:21.352 - Auto restart is enabled for application, existing connections will be terminated during restart
+20928: 19:40:21.352 - Application will restart 1000ms after the last change detected
+20928: 19:40:21.352 - Application will restart if files matching the following are changed: "dll;config"
+20928: 19:40:21.352 - Application will NOT restart if files matching the following are changed: "log4net.config"
+20928: 19:40:21.874 - Taking reference on default app domain
+20928: 19:40:22.346 - Application: "CarServer" started in app domain: 2
+20928: 19:40:22.346 - Adding TCP listener on: 0.0.0.0: 4530 with a listen backlog of: 150
+20928: 19:40:22.346 - TCP inactivity timeout: 10000ms
+20928: 19:40:22.346 - TCP disconnect timeout: 120000ms
+20928: 19:40:22.346 - MaxInboundMessageSize: 512000
+20928: 19:40:22.346 - MaxOutboundMessageSize: 512000
+20928: 19:40:22.346 - Forcing all applications ids to: "CarServer"
+20928: 19:40:22.354 - Serving policy file requests from: "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\Policy\assets\socket-policy.xml"
+20928: 19:40:22.354 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:22.355 - Forcing all applications ids to: "CarServer"
+20928: 19:40:22.355 - MaxInboundMessageSize: 512000
+20928: 19:40:22.355 - MaxOutboundMessageSize: 512000
+20928: 19:40:22.355 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+20928: 19:40:22.356 - Adding UDP listener on: 192.168.40.1: 5055 with a listen backlog of: 500
+20928: 19:40:22.356 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:22.356 - Adding UDP listener on: 192.168.133.1: 5055 with a listen backlog of: 500
+20928: 19:40:22.356 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:22.356 - Adding UDP listener on: 192.168.137.1: 5055 with a listen backlog of: 500
+20928: 19:40:22.356 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:22.356 - Adding UDP listener on: 192.168.43.107: 5055 with a listen backlog of: 500
+20928: 19:40:22.356 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:22.356 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+20928: 19:40:22.356 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+20928: 19:40:22.426 - Service is running...
+20928: 19:40:56.585 - Service is stopped...
+20928: 19:40:56.585 - Server shutting down...
+20928: 19:40:56.585 - Shutdown monitoring enabled, 30000ms before process abort
+20928: 19:40:56.585 - Notifying CLR applications of shutdown...
+20928: 19:40:56.585 - RequestApplicationStop: 2
+20928: 19:40:56.616 - RequestStop: defalt app domain
+20928: 19:40:56.629 - Shutting down WebSocket Outbound Connection Manager...
+20928: 19:40:56.629 - Shutting down TCP Outbound Connection Manager...
+20928: 19:40:56.629 - Shutting down ENet Outbound Connection Manager...
+20928: 19:40:56.629 - Disconnecting all outbound peers...
+20928: 19:40:56.629 - Shutting down ENet host...
+20928: 19:40:56.629 - Disconnecting all peers...
+20928: 19:40:56.629 - Shutting down socket servers...
+20928: 19:40:56.629 - Shutting down ENet thread pool...
+20928: 19:40:56.629 - Shutting down TCP inactivity timers...
+20928: 19:40:56.630 - WaitingForShutdownToComplete: TCP:0.0.0.0:4530
+20928: 19:40:56.631 - OnShutdownCompleted: TCP:0.0.0.0:4530
+20928: 19:40:56.631 - WaitingForShutdownToComplete: UDP:127.0.0.1:5055
+20928: 19:40:56.631 - OnShutdownCompleted: UDP:127.0.0.1:5055
+20928: 19:40:56.631 - WaitingForShutdownToComplete: UDP:192.168.133.1:5055
+20928: 19:40:56.631 - OnShutdownCompleted: UDP:192.168.133.1:5055
+20928: 19:40:56.631 - WaitingForShutdownToComplete: UDP:192.168.137.1:5055
+20928: 19:40:56.631 - OnShutdownCompleted: UDP:192.168.137.1:5055
+20928: 19:40:56.631 - WaitingForShutdownToComplete: UDP:192.168.40.1:5055
+20928: 19:40:56.631 - OnShutdownCompleted: UDP:192.168.40.1:5055
+20928: 19:40:56.631 - WaitingForShutdownToComplete: UDP:192.168.43.107:5055
+20928: 19:40:56.631 - OnShutdownCompleted: UDP:192.168.43.107:5055
+20928: 19:40:56.631 - Shutting down CLR applications...
+20928: 19:40:56.681 - Shutting down business logic thread pool...
+13884: 19:40:56.681 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+20928: 19:40:56.681 - Shutting down I/O thread pool...
+20928: 19:40:56.682 - Destroying servers
+20928: 19:40:56.682 - Destroying WebSocket Outbound Connection Manager
+20928: 19:40:56.682 - Destroying TCP Outbound Connection Manager
+20928: 19:40:56.682 - Destroying TCP inactivity timer
+20928: 19:40:56.682 - Destroying ENet timer wheel
+20928: 19:40:56.682 - Destroying ENet host
+20928: 19:40:56.682 - Destroying ENet outbound host
+20928: 19:40:56.682 - Destroying HTTP inactivity timer
+20928: 19:40:56.682 - Destroying HTTP host
+20928: 19:40:56.682 - Destroying HTTP Chunk host
+20928: 19:40:56.682 - Flushing ENET buffer allocator...
+20928: 19:40:56.685 - Flushing TCP buffer handle allocator...
+20928: 19:40:56.685 - Flushing stream socket allocator...
+20928: 19:40:56.685 - Flushing inbound datagram socket allocator...
+20928: 19:40:56.687 - Flushing outbound datagram socket allocator...
+20928: 19:40:56.687 - Destroying CLR dispatcher
+20928: 19:40:56.687 - Destroying CLR applications
+20928: 19:40:56.689 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+15308: 19:40:56.698 - Unloading Domain: ApplicationName = 'CarServer', DomainId='2'
+13884: 19:40:56.702 - CManagedHost::OnDomainUnload() - 2
+20928: 19:40:56.718 - ~CCLRApplicationCollection() - Done. All objects released
+20928: 19:40:56.718 - ~CManagedHost() - Release default app domain
+20928: 19:40:56.718 - CManagedHost::OnDomainUnload() - 1
+20928: 19:40:56.718 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+20928: 19:40:56.718 - ~CManagedHost
+20928: 19:40:56.718 - Destroying ENet thread pool
+20928: 19:40:56.718 - Destroying Business logic thread pool
+20928: 19:40:56.718 - Destroying I/O thread pool
+20928: 19:40:56.718 - Destroying ENet buffer allocator
+20928: 19:40:56.718 - Destroying TCP buffer allocator
+20928: 19:40:56.718 - Destroying TCP socket allocator
+20928: 19:40:56.718 - Destroying ENet inbound socket allocator
+20928: 19:40:56.718 - Destroying ENet outbound socket allocator
+20928: 19:40:56.718 - Destroying shared datagram flow control data
+20928: 19:40:56.718 - Shutdown complete...
+20928: 19:40:56.719 - Service shutting down
+20928: 19:40:56.725 - Service shut down complete
+16804: 19:42:08.684 - ---
+16804: 19:42:08.684 - Service: "Photon Socket Server" starting
+16804: 19:42:08.684 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+16804: 19:42:08.686 - Will produce at most: 10 crash dumps
+16804: 19:42:08.686 - Action: run as exe
+16804: 19:42:08.686 - Server Starting...
+16804: 19:42:08.686 -    Tick count: 32511703 (wraps in: 49.334 days)
+16804: 19:42:08.686 - Tick count 64: 32511703
+16804: 19:42:08.687 - Photon Version: 4.0.28.2962
+16804: 19:42:08.687 - PID: 15896
+16804: 19:42:08.687 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+16804: 19:42:08.687 - Will NOT log unimportant exceptions
+16804: 19:42:08.690 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+16804: 19:42:08.690 - Shutdown timeout enabled: 30000ms
+16804: 19:42:08.690 - Starting I/O thread pool with 2 threads
+16804: 19:42:08.690 - Using Standard allocator
+16804: 19:42:08.690 - Max message size: 512000
+16804: 19:42:08.691 - Starting business logic thread pool with the following settings
+16804: 19:42:08.691 - InitialThreads: 4 threads
+16804: 19:42:08.691 - MinThreads: 4 threads
+16804: 19:42:08.691 - Thread pool is fixed size
+16804: 19:42:08.691 - Starting ENet thread pool with the following settings
+16804: 19:42:08.691 - InitialThreads: 2 threads
+16804: 19:42:08.691 - MinThreads: 2 threads
+16804: 19:42:08.691 - Thread pool is fixed size
+16804: 19:42:08.691 - OnlyDispatchTimers: False
+16804: 19:42:08.691 - S2S: flow control: Max pending writes: 50
+16804: 19:42:08.691 - S2S: flow control: Max queued buffers: 200
+16804: 19:42:08.691 - S2S: flow control: Max pending writes MUX: 500
+16804: 19:42:08.691 - S2S: flow control: Max queued buffers MUX: 2000
+16804: 19:42:08.691 - S2S: MaxInboundMessageSize: 512000
+16804: 19:42:08.691 - S2S: MaxOutboundMessageSize: 512000
+16804: 19:42:08.691 - S2S: No inactivity timeout
+16804: 19:42:08.697 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:08.697 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:08.697 - WebSocket S2S: MaxInboundMessageSize: 512000
+16804: 19:42:08.697 - WebSocket S2S: MaxOutboundMessageSize: 512000
+16804: 19:42:08.697 - WebSocket S2S: No inactivity timeout
+16804: 19:42:08.697 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:08.697 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+16804: 19:42:08.697 - Per peer bandwidth limit
+16804: 19:42:08.697 - Transmit Rate Limit: 256 KB/Sec
+16804: 19:42:08.697 - Limit period: 200ms
+16804: 19:42:08.697 - Limit per period: 52428 bytes
+16804: 19:42:08.697 - Max queued data for transmission per peer: 512000 bytes
+16804: 19:42:08.697 - Minimum retransmit timeout: 200
+16804: 19:42:08.697 - No Maximum retransmit timeout
+16804: 19:42:08.697 - Minimum ENet timeout: 5000ms
+16804: 19:42:08.697 - Maximum ENet timeout: 30000ms
+16804: 19:42:08.697 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+16804: 19:42:08.697 - No RTT ACK adjustment timeout
+16804: 19:42:08.697 - Outbound ENet: MaxInboundMessageSize: 512000
+16804: 19:42:08.697 - Outbound ENet: MaxOutboundMessageSize: 512000
+16804: 19:42:08.697 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:08.701 - GetRuntime - About to load CLR - versions available:
+16804: 19:42:08.701 - v2.0.50727
+16804: 19:42:08.701 - v4.0.30319
+16804: 19:42:08.701 - Configuration requests: "v2.0.50727"
+16804: 19:42:08.701 - About to load version: "v2.0.50727"
+16804: 19:42:08.705 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+16804: 19:42:08.705 - CLRBaseDirectory set to "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy"
+16804: 19:42:08.705 - Optimising event broadcast for 20 or more peers
+16804: 19:42:08.706 - Start: About to load CLR - versions available:
+16804: 19:42:08.706 - v2.0.50727
+16804: 19:42:08.706 - v4.0.30319
+16804: 19:42:08.706 - No preference in configuration file, will load latest.
+16804: 19:42:08.706 - About to load version: "v4.0.30319"
+16804: 19:42:08.707 - Loaded version: "v4.0.30319"
+16804: 19:42:09.084 - Photon host runtime loaded
+16804: 19:42:11.936 - License is valid.
+16804: 19:42:11.936 - Licensed for 100 concurrent connections.
+16804: 19:42:11.936 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+16804: 19:42:11.936 - ENet: Per peer bandwidth limit
+16804: 19:42:11.936 - ENet: Transmit Rate Limit: 256 KB/Sec
+16804: 19:42:11.936 - ENet: Limit period: 200ms
+16804: 19:42:11.936 - ENet: Limit per period: 52428 bytes
+16804: 19:42:11.936 - ENet: Max queued data for transmission per peer: 512000 bytes
+16804: 19:42:11.936 - ENet: Minimum retransmit timeout: 200
+16804: 19:42:11.936 - No Maximum retransmit timeout
+16804: 19:42:11.936 - ENet: Minimum timeout: 5000ms
+16804: 19:42:11.936 - ENet: Maximum timeout: 30000ms
+16804: 19:42:11.936 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+16804: 19:42:11.936 - No RTT ACK adjustment timeout
+16804: 19:42:11.937 - About to load application: CarServer from CarServer
+16804: 19:42:11.937 - Auto restart is enabled for application, existing connections will be terminated during restart
+16804: 19:42:11.937 - Application will restart 1000ms after the last change detected
+16804: 19:42:11.937 - Application will restart if files matching the following are changed: "dll;config"
+16804: 19:42:11.937 - Application will NOT restart if files matching the following are changed: "log4net.config"
+16804: 19:42:12.236 - Taking reference on default app domain
+16804: 19:42:12.445 - Application: "CarServer" started in app domain: 2
+16804: 19:42:12.445 - Adding TCP listener on: 0.0.0.0: 4530 with a listen backlog of: 150
+16804: 19:42:12.445 - TCP inactivity timeout: 10000ms
+16804: 19:42:12.445 - TCP disconnect timeout: 120000ms
+16804: 19:42:12.445 - MaxInboundMessageSize: 512000
+16804: 19:42:12.445 - MaxOutboundMessageSize: 512000
+16804: 19:42:12.445 - Forcing all applications ids to: "CarServer"
+16804: 19:42:12.445 - Serving policy file requests from: "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\Policy\assets\socket-policy.xml"
+16804: 19:42:12.445 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:12.445 - Forcing all applications ids to: "CarServer"
+16804: 19:42:12.445 - MaxInboundMessageSize: 512000
+16804: 19:42:12.445 - MaxOutboundMessageSize: 512000
+16804: 19:42:12.445 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+16804: 19:42:12.447 - Adding UDP listener on: 192.168.40.1: 5055 with a listen backlog of: 500
+16804: 19:42:12.447 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:12.447 - Adding UDP listener on: 192.168.133.1: 5055 with a listen backlog of: 500
+16804: 19:42:12.447 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:12.448 - Adding UDP listener on: 192.168.137.1: 5055 with a listen backlog of: 500
+16804: 19:42:12.448 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:12.448 - Adding UDP listener on: 192.168.43.107: 5055 with a listen backlog of: 500
+16804: 19:42:12.448 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:12.448 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+16804: 19:42:12.448 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+16804: 19:42:12.515 - Service is running...
+16804: 19:42:56.488 - Service is stopped...
+16804: 19:42:56.488 - Server shutting down...
+16804: 19:42:56.488 - Shutdown monitoring enabled, 30000ms before process abort
+16804: 19:42:56.488 - Notifying CLR applications of shutdown...
+16804: 19:42:56.488 - RequestApplicationStop: 2
+16804: 19:42:56.522 - RequestStop: defalt app domain
+16804: 19:42:56.535 - Shutting down WebSocket Outbound Connection Manager...
+16804: 19:42:56.535 - Shutting down TCP Outbound Connection Manager...
+16804: 19:42:56.535 - Shutting down ENet Outbound Connection Manager...
+16804: 19:42:56.535 - Disconnecting all outbound peers...
+16804: 19:42:56.535 - Shutting down ENet host...
+16804: 19:42:56.535 - Disconnecting all peers...
+16804: 19:42:56.535 - Shutting down socket servers...
+16804: 19:42:56.535 - Shutting down ENet thread pool...
+16804: 19:42:56.535 - Shutting down TCP inactivity timers...
+16804: 19:42:56.538 - WaitingForShutdownToComplete: TCP:0.0.0.0:4530
+16804: 19:42:56.539 - OnShutdownCompleted: TCP:0.0.0.0:4530
+16804: 19:42:56.539 - WaitingForShutdownToComplete: UDP:127.0.0.1:5055
+16804: 19:42:56.539 - OnShutdownCompleted: UDP:127.0.0.1:5055
+16804: 19:42:56.539 - WaitingForShutdownToComplete: UDP:192.168.133.1:5055
+16804: 19:42:56.539 - OnShutdownCompleted: UDP:192.168.133.1:5055
+16804: 19:42:56.539 - WaitingForShutdownToComplete: UDP:192.168.137.1:5055
+16804: 19:42:56.539 - OnShutdownCompleted: UDP:192.168.137.1:5055
+16804: 19:42:56.539 - WaitingForShutdownToComplete: UDP:192.168.40.1:5055
+16804: 19:42:56.539 - OnShutdownCompleted: UDP:192.168.40.1:5055
+16804: 19:42:56.539 - WaitingForShutdownToComplete: UDP:192.168.43.107:5055
+16804: 19:42:56.539 - OnShutdownCompleted: UDP:192.168.43.107:5055
+16804: 19:42:56.539 - Shutting down CLR applications...
+16804: 19:42:56.591 - Shutting down business logic thread pool...
+17760: 19:42:56.591 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+16804: 19:42:56.593 - Shutting down I/O thread pool...
+16804: 19:42:56.601 - Destroying servers
+16804: 19:42:56.601 - Destroying WebSocket Outbound Connection Manager
+16804: 19:42:56.601 - Destroying TCP Outbound Connection Manager
+16804: 19:42:56.601 - Destroying TCP inactivity timer
+16804: 19:42:56.601 - Destroying ENet timer wheel
+16804: 19:42:56.601 - Destroying ENet host
+16804: 19:42:56.601 - Destroying ENet outbound host
+16804: 19:42:56.601 - Destroying HTTP inactivity timer
+16804: 19:42:56.601 - Destroying HTTP host
+16804: 19:42:56.601 - Destroying HTTP Chunk host
+16804: 19:42:56.601 - Flushing ENET buffer allocator...
+16804: 19:42:56.603 - Flushing TCP buffer handle allocator...
+16804: 19:42:56.603 - Flushing stream socket allocator...
+16804: 19:42:56.603 - Flushing inbound datagram socket allocator...
+16804: 19:42:56.605 - Flushing outbound datagram socket allocator...
+16804: 19:42:56.605 - Destroying CLR dispatcher
+16804: 19:42:56.605 - Destroying CLR applications
+16804: 19:42:56.605 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+5172: 19:42:56.609 - Unloading Domain: ApplicationName = 'CarServer', DomainId='2'
+17760: 19:42:56.616 - CManagedHost::OnDomainUnload() - 2
+16804: 19:42:56.631 - ~CCLRApplicationCollection() - Done. All objects released
+16804: 19:42:56.633 - ~CManagedHost() - Release default app domain
+16804: 19:42:56.633 - CManagedHost::OnDomainUnload() - 1
+16804: 19:42:56.633 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+16804: 19:42:56.633 - ~CManagedHost
+16804: 19:42:56.633 - Destroying ENet thread pool
+16804: 19:42:56.633 - Destroying Business logic thread pool
+16804: 19:42:56.633 - Destroying I/O thread pool
+16804: 19:42:56.633 - Destroying ENet buffer allocator
+16804: 19:42:56.633 - Destroying TCP buffer allocator
+16804: 19:42:56.633 - Destroying TCP socket allocator
+16804: 19:42:56.633 - Destroying ENet inbound socket allocator
+16804: 19:42:56.633 - Destroying ENet outbound socket allocator
+16804: 19:42:56.633 - Destroying shared datagram flow control data
+16804: 19:42:56.633 - Shutdown complete...
+16804: 19:42:56.635 - Service shutting down
+16804: 19:42:56.637 - Service shut down complete
+15428: 19:45:19.869 - ---
+15428: 19:45:19.869 - Service: "Photon Socket Server" starting
+15428: 19:45:19.870 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+15428: 19:45:19.872 - Will produce at most: 10 crash dumps
+15428: 19:45:19.872 - Action: run as exe
+15428: 19:45:19.872 - Server Starting...
+15428: 19:45:19.872 -    Tick count: 32702890 (wraps in: 49.3318 days)
+15428: 19:45:19.872 - Tick count 64: 32702890
+15428: 19:45:19.872 - Photon Version: 4.0.28.2962
+15428: 19:45:19.873 - PID: 6060
+15428: 19:45:19.873 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+15428: 19:45:19.873 - Will NOT log unimportant exceptions
+15428: 19:45:19.875 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+15428: 19:45:19.875 - Shutdown timeout enabled: 30000ms
+15428: 19:45:19.875 - Starting I/O thread pool with 2 threads
+15428: 19:45:19.875 - Using Standard allocator
+15428: 19:45:19.875 - Max message size: 512000
+15428: 19:45:19.875 - Starting business logic thread pool with the following settings
+15428: 19:45:19.875 - InitialThreads: 4 threads
+15428: 19:45:19.875 - MinThreads: 4 threads
+15428: 19:45:19.875 - Thread pool is fixed size
+15428: 19:45:19.876 - Starting ENet thread pool with the following settings
+15428: 19:45:19.876 - InitialThreads: 2 threads
+15428: 19:45:19.876 - MinThreads: 2 threads
+15428: 19:45:19.876 - Thread pool is fixed size
+15428: 19:45:19.876 - OnlyDispatchTimers: False
+15428: 19:45:19.876 - S2S: flow control: Max pending writes: 50
+15428: 19:45:19.876 - S2S: flow control: Max queued buffers: 200
+15428: 19:45:19.876 - S2S: flow control: Max pending writes MUX: 500
+15428: 19:45:19.876 - S2S: flow control: Max queued buffers MUX: 2000
+15428: 19:45:19.876 - S2S: MaxInboundMessageSize: 512000
+15428: 19:45:19.876 - S2S: MaxOutboundMessageSize: 512000
+15428: 19:45:19.876 - S2S: No inactivity timeout
+15428: 19:45:19.879 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:19.879 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:19.880 - WebSocket S2S: MaxInboundMessageSize: 512000
+15428: 19:45:19.880 - WebSocket S2S: MaxOutboundMessageSize: 512000
+15428: 19:45:19.880 - WebSocket S2S: No inactivity timeout
+15428: 19:45:19.880 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:19.881 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+15428: 19:45:19.881 - Per peer bandwidth limit
+15428: 19:45:19.881 - Transmit Rate Limit: 256 KB/Sec
+15428: 19:45:19.881 - Limit period: 200ms
+15428: 19:45:19.881 - Limit per period: 52428 bytes
+15428: 19:45:19.881 - Max queued data for transmission per peer: 512000 bytes
+15428: 19:45:19.881 - Minimum retransmit timeout: 200
+15428: 19:45:19.882 - No Maximum retransmit timeout
+15428: 19:45:19.882 - Minimum ENet timeout: 5000ms
+15428: 19:45:19.882 - Maximum ENet timeout: 30000ms
+15428: 19:45:19.882 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+15428: 19:45:19.882 - No RTT ACK adjustment timeout
+15428: 19:45:19.882 - Outbound ENet: MaxInboundMessageSize: 512000
+15428: 19:45:19.882 - Outbound ENet: MaxOutboundMessageSize: 512000
+15428: 19:45:19.883 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:19.885 - GetRuntime - About to load CLR - versions available:
+15428: 19:45:19.885 - v2.0.50727
+15428: 19:45:19.885 - v4.0.30319
+15428: 19:45:19.885 - Configuration requests: "v2.0.50727"
+15428: 19:45:19.885 - About to load version: "v2.0.50727"
+15428: 19:45:19.889 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+15428: 19:45:19.889 - CLRBaseDirectory set to "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy"
+15428: 19:45:19.889 - Optimising event broadcast for 20 or more peers
+15428: 19:45:19.890 - Start: About to load CLR - versions available:
+15428: 19:45:19.890 - v2.0.50727
+15428: 19:45:19.890 - v4.0.30319
+15428: 19:45:19.890 - No preference in configuration file, will load latest.
+15428: 19:45:19.890 - About to load version: "v4.0.30319"
+15428: 19:45:19.891 - Loaded version: "v4.0.30319"
+15428: 19:45:20.129 - Photon host runtime loaded
+15428: 19:45:22.872 - License is valid.
+15428: 19:45:22.872 - Licensed for 100 concurrent connections.
+15428: 19:45:22.872 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+15428: 19:45:22.872 - ENet: Per peer bandwidth limit
+15428: 19:45:22.872 - ENet: Transmit Rate Limit: 256 KB/Sec
+15428: 19:45:22.872 - ENet: Limit period: 200ms
+15428: 19:45:22.872 - ENet: Limit per period: 52428 bytes
+15428: 19:45:22.872 - ENet: Max queued data for transmission per peer: 512000 bytes
+15428: 19:45:22.872 - ENet: Minimum retransmit timeout: 200
+15428: 19:45:22.872 - No Maximum retransmit timeout
+15428: 19:45:22.872 - ENet: Minimum timeout: 5000ms
+15428: 19:45:22.872 - ENet: Maximum timeout: 30000ms
+15428: 19:45:22.872 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+15428: 19:45:22.872 - No RTT ACK adjustment timeout
+15428: 19:45:22.873 - About to load application: CarServer from CarServer
+15428: 19:45:22.873 - Auto restart is enabled for application, existing connections will be terminated during restart
+15428: 19:45:22.873 - Application will restart 1000ms after the last change detected
+15428: 19:45:22.873 - Application will restart if files matching the following are changed: "dll;config"
+15428: 19:45:22.873 - Application will NOT restart if files matching the following are changed: "log4net.config"
+15428: 19:45:23.118 - Taking reference on default app domain
+15428: 19:45:23.350 - Application: "CarServer" started in app domain: 2
+15428: 19:45:23.350 - Adding TCP listener on: 0.0.0.0: 4530 with a listen backlog of: 150
+15428: 19:45:23.350 - TCP inactivity timeout: 10000ms
+15428: 19:45:23.350 - TCP disconnect timeout: 120000ms
+15428: 19:45:23.350 - MaxInboundMessageSize: 512000
+15428: 19:45:23.350 - MaxOutboundMessageSize: 512000
+15428: 19:45:23.350 - Forcing all applications ids to: "CarServer"
+15428: 19:45:23.350 - Serving policy file requests from: "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\Policy\assets\socket-policy.xml"
+15428: 19:45:23.350 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:23.350 - Forcing all applications ids to: "CarServer"
+15428: 19:45:23.350 - MaxInboundMessageSize: 512000
+15428: 19:45:23.350 - MaxOutboundMessageSize: 512000
+15428: 19:45:23.350 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+15428: 19:45:23.352 - Adding UDP listener on: 192.168.40.1: 5055 with a listen backlog of: 500
+15428: 19:45:23.352 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:23.352 - Adding UDP listener on: 192.168.133.1: 5055 with a listen backlog of: 500
+15428: 19:45:23.352 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:23.352 - Adding UDP listener on: 192.168.137.1: 5055 with a listen backlog of: 500
+15428: 19:45:23.352 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:23.352 - Adding UDP listener on: 192.168.43.107: 5055 with a listen backlog of: 500
+15428: 19:45:23.352 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:23.352 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+15428: 19:45:23.352 - Cannot enable FILE_SKIP_COMPLETION_PORT_ON_SUCCESS as "Netease UU" does not support XP1_IFS_HANDLES. ServiceFlags1 = 0x66
+15428: 19:45:23.409 - Service is running...

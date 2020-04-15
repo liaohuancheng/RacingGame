@@ -35,8 +35,8 @@ public class ProgressBar : MonoBehaviour
         {
             _instance = this;
         }
-        progressBar = transform.Find("image").GetComponent<Image>();
         gameObject.SetActive(false);
+        progressBar = transform.Find("image").GetComponent<Image>();
     }
 
     void Update()

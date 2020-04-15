@@ -57,15 +57,10 @@ public class RoomDgt : MonoBehaviour
 
     public void OnClickStartGameBtn()
     {
-        Debug.Log("开始游戏");
-        UIController.Instance.HideUI("RoomRoot");
-        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
-        ProgressBar.Instance.Show(operation);
+        RoomController.Instance.StartFight();
     }
 
-
-    
-        public void OnClickExitRoomBtn()
+    public void OnClickExitRoomBtn()
     {
         RoomController.Instance.ExitRoom(UserInfo.Instance.Id);
         UIController.Instance.HideUI("RoomRoot");

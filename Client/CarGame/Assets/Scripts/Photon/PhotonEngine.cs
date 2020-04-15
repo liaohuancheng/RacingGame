@@ -1,7 +1,7 @@
 ﻿using Assets.Scripts.Photon.Controller;
+using Assets.Scripts.Photon.EventHandler;
 using CarCommon;
 using ExitGames.Client.Photon;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +10,8 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
     public ConnectionProtocol protocol = ConnectionProtocol.Tcp;
     public string serverAddress = "127.0.0.1:4530";
     public string applicationName = "CarServer";
+
+    public Dictionary<byte, HandlerBase> handlerDic = new Dictionary<byte, HandlerBase>();
 
     public delegate void OnConnectedToServerEvent();
     public event OnConnectedToServerEvent onConnectedToServer;
@@ -41,7 +43,7 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
 
     public void SendRequest(OperationCode operationCode, Dictionary<byte,object> parameters)
     {
-        Debug.Log("发起请求 operationCode:" + operationCode);
+        //Debug.Log("发起请求 operationCode:" + operationCode);
         peer.OpCustom((byte)operationCode, parameters, true);
     }
 
@@ -51,6 +53,7 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
         DontDestroyOnLoad(_instance);
         peer = new PhotonPeer(this, protocol);
         peer.Connect(serverAddress, applicationName);
+        RegisteHandlers();
     }
 
     // Update is called once per frame
@@ -67,7 +70,22 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
 
     public void OnEvent(EventData eventData)
     {
-        throw new System.NotImplementedException();
+        HandlerBase handler;
+        handlerDic.TryGetValue(eventData.Code, out handler);
+        if (handler != null)
+        {
+            handler.OnEventHandle(eventData);
+            //Debug.Log("get EventCode:" + eventData.Code);
+        }
+        else
+        {
+            //Debug.Log("Unknow Event EventCode:" + eventData.Code);
+        }
+    }
+
+    public void RegisteHandlers()
+    {
+        handlerDic.Add((byte)EventCode.Battle, new BattleHandler());
     }
 
     public void OnOperationResponse(OperationResponse operationResponse)

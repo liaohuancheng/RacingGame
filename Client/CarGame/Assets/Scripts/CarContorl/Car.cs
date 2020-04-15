@@ -6,6 +6,20 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
+    public enum CtrlType
+    {
+        none,
+        player,
+        net,
+    }
+
+    public CtrlType ctrlType = CtrlType.player;
+
+    public Vector3 lastPos;
+    public Vector3 lastRot;
+    public Vector3 frontPos;
+    public Vector3 frontRot;
+
     public Transform wheelFR;
     public Transform wheelFL;
     public Transform wheelRR;
@@ -16,7 +30,7 @@ public class Car : MonoBehaviour
     public WheelCollider wheelColliderRR;
     public WheelCollider wheelColliderRL;
 
-    public Rigidbody rigidbody;
+    public new Rigidbody rigidbody;
 
     public Transform centerOfMass;
 
@@ -26,29 +40,86 @@ public class Car : MonoBehaviour
     public float maxSpeed = 200;
     public float minSpeed = 30;
     private float currentSpeed;
+    private CarUsrControl usrControl;
 
     public float brakeTorque ;
     private Rigidbody rigibody;
     public int reverseTorque;
 
-    private Vector3 lastPostion = Vector3.zero;
     private float moveOffset = 0.1f;
 
+    private float lastSendTime;
+    private float lastRecvTime;
+    private float timeInterval;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         initProperty();
         rigidbody = GetComponent<Rigidbody>();
-        InvokeRepeating("SyncPosition", 3, 1 / 15f);
+        if (ctrlType == CtrlType.player)
+        {
+            usrControl = GetComponent<CarUsrControl>();
+        }
+        lastSendTime = Time.deltaTime;
+        lastRecvTime = Time.deltaTime;
+        lastPos = transform.position;
+        lastRot = transform.eulerAngles;
+    }
+
+    private void Update()
+    {
+        if(ctrlType == CtrlType.player)
+        {
+            usrControl.control();
+            if(Time.time - lastSendTime > 0.1f)
+            {
+                SyncPosition();
+            }
+        }else if(ctrlType == CtrlType.net)
+        {
+            NetUpdate();
+        }
+    }
+
+    public void NetForecastInfo(Vector3 nowPostion, Vector3 nowRotation) 
+    {
+        Debug.Log("NetForecastInfo");
+        frontPos = lastPos + (nowPostion - lastPos) * 2;
+        frontRot = lastRot + (nowRotation - lastRot) * 2;
+        //if(Time.time - lastRecvTime > 0.3f)
+        //{
+        //    frontRot = nowPostion;
+        //    frontRot = nowRotation;
+        //}
+
+        timeInterval = Time.time - lastRecvTime;
+
+        lastPos = nowPostion;
+        lastRot = nowRotation;
+        lastRecvTime = Time.time;
+        
+    }
+
+    private void NetUpdate()
+    {
+        Vector3 pos = transform.position;
+        Vector3 rot = transform.eulerAngles;
+        if(timeInterval > 0)
+        {
+            transform.position = Vector3.Lerp(pos, frontPos, timeInterval);
+            //transform.rotation = Quaternion.Lerp(Quaternion.Euler(rot), Quaternion.Euler(frontRot), timeInterval);
+            transform.eulerAngles = Vector3.Lerp(rot, frontRot, timeInterval);
+            
+        }
     }
 
     void SyncPosition()
     {
-        if(Vector3.Distance(transform.position, lastPostion) > moveOffset)
+        if(Vector3.Distance(transform.position, lastPos) > moveOffset)
         {
-            lastPostion = transform.position;
-            SyncPositionController.Instance.SendPosition(transform.position);
-
+            lastPos = transform.position;
+            BattleController.Instance.SendPosition(transform.position, transform.eulerAngles);
         }
     }
 
@@ -68,6 +139,14 @@ public class Car : MonoBehaviour
 
     }
 
+    public void InitNetCtrl()
+    {
+        lastPos = transform.position;
+        lastRot = transform.eulerAngles;
+        frontPos = transform.position;
+        frontPos = transform.eulerAngles;
+        rigibody.constraints = RigidbodyConstraints.FreezeAll;
+    }
 
     public void Move(float steering, float accel, float footbrake, float handbrake)
     {

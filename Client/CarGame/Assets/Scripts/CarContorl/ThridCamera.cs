@@ -20,8 +20,15 @@ public class ThridCamera : MonoBehaviour
         raycastLayers = ~ignoreLayers;    
     }
 
+    public void SetTarget(Transform target)
+    {
+        this.target = target;
+    }
+
     void FixedUpdate()
     {
+        if (target == null)
+            return;
         currentVelocity = Vector3.Lerp(preVelocity, target.root.GetComponent<Rigidbody>().velocity, velocityDamping * Time.deltaTime);
         currentVelocity.y = 0;
         preVelocity = currentVelocity;
@@ -29,6 +36,8 @@ public class ThridCamera : MonoBehaviour
 
     void LateUpdate()
     {
+        if (target == null)
+            return;
         float speedFactor = Mathf.Clamp01(target.root.GetComponent<Rigidbody>().velocity.magnitude / 70.0f);
         camera.fieldOfView = Mathf.Lerp(52, 77, speedFactor);
         float currentDistance = Mathf.Lerp(7.5f, 6.5f, speedFactor);
