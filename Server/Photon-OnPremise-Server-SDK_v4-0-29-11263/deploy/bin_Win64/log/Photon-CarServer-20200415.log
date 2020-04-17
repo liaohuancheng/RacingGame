@@ -1,0 +1,103 @@
+17828: 21:34:21.587 - ---
+17828: 21:34:21.587 - Service: "Photon Socket Server" starting
+17828: 21:34:21.587 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+17828: 21:34:21.600 - Will produce at most: 10 crash dumps
+17828: 21:34:21.600 - Action: run as exe
+17828: 21:34:21.602 - Server Starting...
+17828: 21:34:21.603 -    Tick count: 43606078 (wraps in: 49.2056 days)
+17828: 21:34:21.603 - Tick count 64: 43606078
+17828: 21:34:21.603 - Photon Version: 4.0.28.2962
+17828: 21:34:21.603 - PID: 19592
+17828: 21:34:21.603 - Config File: C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+17828: 21:34:21.604 - Will NOT log unimportant exceptions
+17828: 21:34:21.624 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+17828: 21:34:21.625 - Shutdown timeout enabled: 30000ms
+17828: 21:34:21.628 - Starting I/O thread pool with 2 threads
+17828: 21:34:21.629 - Using Standard allocator
+17828: 21:34:21.629 - Max message size: 512000
+17828: 21:34:21.630 - Starting business logic thread pool with the following settings
+17828: 21:34:21.630 - InitialThreads: 4 threads
+17828: 21:34:21.630 - MinThreads: 4 threads
+17828: 21:34:21.630 - Thread pool is fixed size
+17828: 21:34:21.631 - Starting ENet thread pool with the following settings
+17828: 21:34:21.631 - InitialThreads: 2 threads
+17828: 21:34:21.631 - MinThreads: 2 threads
+17828: 21:34:21.631 - Thread pool is fixed size
+17828: 21:34:21.631 - OnlyDispatchTimers: False
+17828: 21:34:21.632 - S2S: flow control: Max pending writes: 50
+17828: 21:34:21.632 - S2S: flow control: Max queued buffers: 200
+17828: 21:34:21.632 - S2S: flow control: Max pending writes MUX: 500
+17828: 21:34:21.632 - S2S: flow control: Max queued buffers MUX: 2000
+17828: 21:34:21.632 - S2S: MaxInboundMessageSize: 512000
+17828: 21:34:21.632 - S2S: MaxOutboundMessageSize: 512000
+17828: 21:34:21.632 - S2S: No inactivity timeout
+17828: 21:34:21.638 - WebSocket S2S: MaxInboundMessageSize: 512000
+17828: 21:34:21.638 - WebSocket S2S: MaxOutboundMessageSize: 512000
+17828: 21:34:21.638 - WebSocket S2S: No inactivity timeout
+17828: 21:34:21.639 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+17828: 21:34:21.639 - Per peer bandwidth limit
+17828: 21:34:21.639 - Transmit Rate Limit: 256 KB/Sec
+17828: 21:34:21.639 - Limit period: 200ms
+17828: 21:34:21.639 - Limit per period: 52428 bytes
+17828: 21:34:21.639 - Max queued data for transmission per peer: 512000 bytes
+17828: 21:34:21.639 - Minimum retransmit timeout: 200
+17828: 21:34:21.639 - No Maximum retransmit timeout
+17828: 21:34:21.639 - Minimum ENet timeout: 5000ms
+17828: 21:34:21.639 - Maximum ENet timeout: 30000ms
+17828: 21:34:21.639 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+17828: 21:34:21.639 - No RTT ACK adjustment timeout
+17828: 21:34:21.639 - Outbound ENet: MaxInboundMessageSize: 512000
+17828: 21:34:21.639 - Outbound ENet: MaxOutboundMessageSize: 512000
+17828: 21:34:21.661 - GetRuntime - About to load CLR - versions available:
+17828: 21:34:21.661 - v2.0.50727
+17828: 21:34:21.661 - v4.0.30319
+17828: 21:34:21.661 - Configuration requests: "v2.0.50727"
+17828: 21:34:21.661 - About to load version: "v2.0.50727"
+17828: 21:34:21.699 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+17828: 21:34:21.699 - CLRBaseDirectory set to "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy"
+17828: 21:34:21.699 - Optimising event broadcast for 20 or more peers
+17828: 21:34:21.702 - Start: About to load CLR - versions available:
+17828: 21:34:21.702 - v2.0.50727
+17828: 21:34:21.702 - v4.0.30319
+17828: 21:34:21.702 - No preference in configuration file, will load latest.
+17828: 21:34:21.702 - About to load version: "v4.0.30319"
+17828: 21:34:21.704 - Loaded version: "v4.0.30319"
+17828: 21:34:21.953 - Photon host runtime loaded
+17828: 21:34:24.136 - License is valid.
+17828: 21:34:24.136 - Licensed for 100 concurrent connections.
+17828: 21:34:24.136 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+17828: 21:34:24.136 - ENet: Per peer bandwidth limit
+17828: 21:34:24.136 - ENet: Transmit Rate Limit: 256 KB/Sec
+17828: 21:34:24.136 - ENet: Limit period: 200ms
+17828: 21:34:24.136 - ENet: Limit per period: 52428 bytes
+17828: 21:34:24.136 - ENet: Max queued data for transmission per peer: 512000 bytes
+17828: 21:34:24.136 - ENet: Minimum retransmit timeout: 200
+17828: 21:34:24.136 - No Maximum retransmit timeout
+17828: 21:34:24.136 - ENet: Minimum timeout: 5000ms
+17828: 21:34:24.136 - ENet: Maximum timeout: 30000ms
+17828: 21:34:24.136 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+17828: 21:34:24.136 - No RTT ACK adjustment timeout
+17828: 21:34:24.136 - About to load application: CarServer from CarServer
+17828: 21:34:24.136 - Auto restart is enabled for application, existing connections will be terminated during restart
+17828: 21:34:24.136 - Application will restart 1000ms after the last change detected
+17828: 21:34:24.136 - Application will restart if files matching the following are changed: "dll;config"
+17828: 21:34:24.136 - Application will NOT restart if files matching the following are changed: "log4net.config"
+17828: 21:34:24.582 - Taking reference on default app domain
+17828: 21:34:25.019 - Application: "CarServer" started in app domain: 2
+17828: 21:34:25.019 - Adding TCP listener on: 0.0.0.0: 4530 with a listen backlog of: 150
+17828: 21:34:25.020 - TCP inactivity timeout: 10000ms
+17828: 21:34:25.020 - TCP disconnect timeout: 120000ms
+17828: 21:34:25.020 - MaxInboundMessageSize: 512000
+17828: 21:34:25.020 - MaxOutboundMessageSize: 512000
+17828: 21:34:25.020 - Forcing all applications ids to: "CarServer"
+17828: 21:34:25.033 - Serving policy file requests from: "C:\Users\94910\Desktop\Car\Server\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\Policy\assets\socket-policy.xml"
+17828: 21:34:25.033 - Forcing all applications ids to: "CarServer"
+17828: 21:34:25.033 - MaxInboundMessageSize: 512000
+17828: 21:34:25.033 - MaxOutboundMessageSize: 512000
+17828: 21:34:25.033 - UDP address specified as: "0.0.0.0" adding listener to each available IPv4 address
+17828: 21:34:25.034 - Adding UDP listener on: 192.168.40.1: 5055 with a listen backlog of: 500
+17828: 21:34:25.034 - Adding UDP listener on: 192.168.133.1: 5055 with a listen backlog of: 500
+17828: 21:34:25.034 - Adding UDP listener on: 192.168.1.103: 5055 with a listen backlog of: 500
+17828: 21:34:25.034 - Adding UDP listener on: 192.168.137.1: 5055 with a listen backlog of: 500
+17828: 21:34:25.034 - Adding UDP listener on: 127.0.0.1: 5055 with a listen backlog of: 500
+17828: 21:34:25.079 - Service is running...

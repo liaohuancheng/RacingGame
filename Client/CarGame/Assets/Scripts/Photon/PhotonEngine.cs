@@ -75,24 +75,25 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
         if (handler != null)
         {
             handler.OnEventHandle(eventData);
-            //Debug.Log("get EventCode:" + eventData.Code);
+            Debug.Log("get EventCode:" + eventData.Code);
         }
         else
         {
-            //Debug.Log("Unknow Event EventCode:" + eventData.Code);
+            Debug.Log("Unknow Event EventCode:" + eventData.Code);
         }
     }
 
     public void RegisteHandlers()
     {
         handlerDic.Add((byte)EventCode.Battle, new BattleHandler());
+        handlerDic.Add((byte)EventCode.Room, new RoomHandler());
     }
 
     public void OnOperationResponse(OperationResponse operationResponse)
     {
         ControllerBase controller;
         controllers.TryGetValue(operationResponse.OperationCode, out controller);
-        Debug.Log("opCode:" + operationResponse.OperationCode);
+        //Debug.Log("opCode:" + operationResponse.OperationCode);
         if (controller != null)
         {
             controller.OnOperationResponse(operationResponse);

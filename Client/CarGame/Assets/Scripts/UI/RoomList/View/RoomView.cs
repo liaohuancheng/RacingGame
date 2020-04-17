@@ -31,16 +31,12 @@ public class RoomView : MonoBehaviour
 
     public void RemovePlayerCell()
     {
-        if(PlayerLst == null)
-        {
-            return;
-        }
+        List<GameObject> tmpLst = new List<GameObject>(PlayerLst);
         
-        for (int i = 0; i < PlayerLst.Count; i++)
+        foreach(var playerCell in tmpLst)
         {
-            GameObject PlayerPropGo = PlayerLst[i];
-            PlayerLst.Remove(PlayerLst[i]);
-            Destroy(PlayerPropGo);
+            PlayerLst.Remove(playerCell);
+            Destroy(playerCell);
         }
 
     }

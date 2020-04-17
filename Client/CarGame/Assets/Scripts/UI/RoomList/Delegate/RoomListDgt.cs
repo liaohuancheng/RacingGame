@@ -74,4 +74,10 @@ public class RoomListDgt : MonoBehaviour
         UIController.Instance.HideUI("RoomLstRoot");
         UIController.Instance.ShowUI("CreateRoomPanel");
     }
+
+    public void OnClickRefreshBtn()
+    {
+        GetRoomController.Instance.GetRoomLst();
+        
+    }
 }

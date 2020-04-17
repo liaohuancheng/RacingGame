@@ -14,7 +14,6 @@ public class CreateRoomDgt : MonoBehaviour
     }
     public void CreateRoom()
     {
-        Debug.Log(RoomNameInput.text);
         if (RoomNameInput.text != null)
         {
             createRoomController.CreateRoom(RoomNameInput.text);

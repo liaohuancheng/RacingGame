@@ -20,6 +20,8 @@ public class Car : MonoBehaviour
     public Vector3 frontPos;
     public Vector3 frontRot;
 
+    public Quaternion frontRotTest;
+
     public Transform wheelFR;
     public Transform wheelFL;
     public Transform wheelRR;
@@ -61,10 +63,12 @@ public class Car : MonoBehaviour
         {
             usrControl = GetComponent<CarUsrControl>();
         }
-        lastSendTime = Time.deltaTime;
+        lastSendTime = Time.time;
         lastRecvTime = Time.deltaTime;
         lastPos = transform.position;
         lastRot = transform.eulerAngles;
+
+        frontRotTest = transform.rotation;
     }
 
     private void Update()
@@ -75,8 +79,11 @@ public class Car : MonoBehaviour
             if(Time.time - lastSendTime > 0.1f)
             {
                 SyncPosition();
+                lastSendTime = Time.time;
             }
-        }else if(ctrlType == CtrlType.net)
+            
+        }
+        else if(ctrlType == CtrlType.net)
         {
             NetUpdate();
         }
@@ -84,32 +91,32 @@ public class Car : MonoBehaviour
 
     public void NetForecastInfo(Vector3 nowPostion, Vector3 nowRotation) 
     {
-        Debug.Log("NetForecastInfo");
-        frontPos = lastPos + (nowPostion - lastPos) * 2;
+        frontPos = lastPos +(nowPostion - lastPos) * 2;
         frontRot = lastRot + (nowRotation - lastRot) * 2;
-        //if(Time.time - lastRecvTime > 0.3f)
-        //{
-        //    frontRot = nowPostion;
-        //    frontRot = nowRotation;
-        //}
+        if (Time.time - lastRecvTime > 0.1f)
+        {
+            frontPos = nowPostion;
+            frontRot = nowRotation;
+        }
 
         timeInterval = Time.time - lastRecvTime;
 
         lastPos = nowPostion;
         lastRot = nowRotation;
         lastRecvTime = Time.time;
-        
+
+
     }
 
     private void NetUpdate()
     {
         Vector3 pos = transform.position;
         Vector3 rot = transform.eulerAngles;
+        
         if(timeInterval > 0)
         {
             transform.position = Vector3.Lerp(pos, frontPos, timeInterval);
-            //transform.rotation = Quaternion.Lerp(Quaternion.Euler(rot), Quaternion.Euler(frontRot), timeInterval);
-            transform.eulerAngles = Vector3.Lerp(rot, frontRot, timeInterval);
+            transform.rotation = Quaternion.Lerp(Quaternion.Euler(rot), Quaternion.Euler(frontRot), timeInterval);
             
         }
     }
