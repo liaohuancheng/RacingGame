@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts;
 using Assets.Scripts.Photon.Controller;
 using CarCommon.Model;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -65,5 +66,11 @@ public class RoomDgt : MonoBehaviour
         RoomController.Instance.ExitRoom(UserInfo.Instance.Id);
         UIController.Instance.HideUI("RoomRoot");
         UIController.Instance.ShowUI("RoomLstRoot");
+    }
+
+    public void Refresh()
+    {
+        roomView.RemovePlayerCell();
+        RoomController.Instance.GetRoomInfo();
     }
 }

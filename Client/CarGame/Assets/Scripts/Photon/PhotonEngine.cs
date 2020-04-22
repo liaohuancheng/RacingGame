@@ -23,16 +23,30 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
 
     public static PhotonEngine _instance;
 
+
     public static PhotonEngine Instance
     {
         get
         {
+            if (_instance == null)
+            {    //查找场景中是否已经存在单例
+                _instance = FindObjectOfType<PhotonEngine>();
+                if (_instance == null)
+                {    //创建游戏对象然后绑定单例脚本
+                    GameObject go = new GameObject("PhotonEngine");
+                    _instance = go.AddComponent<PhotonEngine>();
+                }
+            }
             return _instance;
         }
     }
 
     public void RegisterController(OperationCode code, ControllerBase controller)
     {
+        if (controllers.ContainsKey((byte)code))
+        {
+            return;
+        }
         controllers.Add((byte)code, controller);
     }
 
@@ -49,8 +63,16 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
 
     void Awake()
     {
-        _instance = this;
-        DontDestroyOnLoad(_instance);
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
         peer = new PhotonPeer(this, protocol);
         peer.Connect(serverAddress, applicationName);
         RegisteHandlers();
@@ -61,6 +83,10 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
     {
         if (peer != null)
             peer.Service();
+        if (!isConnected)
+        {
+            peer.Connect(serverAddress, applicationName);
+        }
     }
 
     public void DebugReturn(DebugLevel level, string message)
@@ -75,11 +101,11 @@ public class PhotonEngine : MonoBehaviour ,IPhotonPeerListener
         if (handler != null)
         {
             handler.OnEventHandle(eventData);
-            Debug.Log("get EventCode:" + eventData.Code);
+            //Debug.Log("get EventCode:" + eventData.Code);
         }
         else
         {
-            Debug.Log("Unknow Event EventCode:" + eventData.Code);
+            //Debug.Log("Unknow Event EventCode:" + eventData.Code);
         }
     }
 

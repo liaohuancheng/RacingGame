@@ -1,6 +1,7 @@
 ﻿using CarCommon;
 using CarCommon.Model;
 using ExitGames.Client.Photon;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -52,6 +53,15 @@ namespace Assets.Scripts.Photon.Controller
         public override void OnOperationResponse(OperationResponse operationResponse)
         {
 
+        }
+
+        public void OnPlayerFinshGame(float finishTime)
+        {
+            Debug.Log("到达终点");
+            Dictionary<byte, object> paramaters = new Dictionary<byte, object>();
+            ParameterTool.AddParameter(paramaters, ParamaterCode.First, finishTime, false);
+            ParameterTool.AddParameter(paramaters, ParamaterCode.BattleOperationCode, BattleOperationCode.PlayerFinishGame, false);
+            PhotonEngine.Instance.SendRequest(OpCode, paramaters);
         }
     }
 }

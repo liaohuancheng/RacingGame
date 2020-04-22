@@ -1,6 +1,8 @@
 ﻿using Assets.Scripts;
 using Assets.Scripts.CarContorl;
+using Assets.Scripts.Photon.Controller;
 using CarCommon.Model;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +10,8 @@ public class GameMgr : MonoBehaviour
 {
     //单例
     private static GameMgr _instance = null;
+    private List<GameObject> arriveCheckPoitLst = new List<GameObject>();
+    private float startTime;
     public static GameMgr Instance
     {
         get
@@ -23,11 +27,11 @@ public class GameMgr : MonoBehaviour
             }
             return _instance;
         }
-
     }
-    //坦克预设
+
+    //汽车预设
     public GameObject[] carPrefabs;
-    //战场中的所有坦克
+    //战场中的所有汽车
     public Dictionary<int, CarContainer> CarDic = new Dictionary<int, CarContainer>();
 
     // Use this for initialization
@@ -37,6 +41,22 @@ public class GameMgr : MonoBehaviour
             _instance = this;
         else
             Destroy(gameObject);
+        startTime = Time.time;
+        InitScene();
+    }
+
+    private void InitScene()
+    {
+        arriveCheckPoitLst.Clear();
+    }
+
+    public void PassCheckPoint(GameObject checkPoint)
+    {
+        if (arriveCheckPoitLst.Contains(checkPoint))
+        {
+            return ;
+        }
+        arriveCheckPoitLst.Add(checkPoint);
     }
 
     public CarContainer GetCarById(int Id)
@@ -56,7 +76,7 @@ public class GameMgr : MonoBehaviour
     //开始战斗
     public void StartBattle(int carCount,List<User> UserLst)
     {
-        //每一辆坦克
+        //每一辆汽车
         for (int i = 0; i < carCount; i++)
         {
             int id = UserLst[i].ID;
@@ -65,7 +85,7 @@ public class GameMgr : MonoBehaviour
     }
 
 
-    //产生坦克
+    //产生汽车
     public void GenerateCar(int id, int count)
     {
         //获取出生点
@@ -83,7 +103,7 @@ public class GameMgr : MonoBehaviour
             Debug.LogError("汽车预设数量不够");
             return;
         }
-        //产生坦克
+        //产生汽车
         GameObject carObj = Instantiate(carPrefabs[count]);
         carObj.name = id.ToString();
         carObj.transform.position = swopTrans.position;
@@ -99,8 +119,8 @@ public class GameMgr : MonoBehaviour
         if (id == UserInfo.Instance.Id)
         {
             carContainer.car.ctrlType = Car.CtrlType.player;
-            GameObject camera = GameObject.Find("Camera");
-            ThridCamera thridCamera = camera.GetComponent<ThridCamera>();
+            GameObject camerGameobject = GameObject.Find("CamerGameobject");
+            ThridCamera thridCamera = camerGameobject.GetComponent<ThridCamera>();
             GameObject target = carContainer.Carobject;
             thridCamera.SetTarget(target.transform);
         }
@@ -112,61 +132,12 @@ public class GameMgr : MonoBehaviour
         CarDic.Add(id, carContainer);
     }
 
-
-    //public void RecvUpdateUnitInfo(ProtocolBase protocol)
-    //{
-    //    //解析协议
-    //    int start = 0;
-    //    ProtocolBytes proto = (ProtocolBytes)protocol;
-    //    string protoName = proto.GetString(start, ref start);
-    //    string id = proto.GetString(start, ref start);
-    //    Vector3 nPos;
-    //    Vector3 nRot;
-    //    nPos.x = proto.GetFloat(start, ref start);
-    //    nPos.y = proto.GetFloat(start, ref start);
-    //    nPos.z = proto.GetFloat(start, ref start);
-    //    nRot.x = proto.GetFloat(start, ref start);
-    //    nRot.y = proto.GetFloat(start, ref start);
-    //    nRot.z = proto.GetFloat(start, ref start);
-    //    float turretY = proto.GetFloat(start, ref start);
-    //    float gunX = proto.GetFloat(start, ref start);
-    //    //处理
-    //    Debug.Log("RecvUpdateUnitInfo " + id);
-    //    if (!list.ContainsKey(id))
-    //    {
-    //        Debug.Log("RecvUpdateUnitInfo bt == null ");
-    //        return;
-    //    }
-    //    BattleTank bt = list[id];
-    //    if (id == GameMgr.instance.id)
-    //        return;
-
-    //    bt.tank.NetForecastInfo(nPos, nRot);
-    //    bt.tank.NetTurretTarget(turretY, gunX); //稍后实现
-    //}
-
-    //public void RecvResult(ProtocolBase protocol)
-    //{
-    //    //解析协议
-    //    int start = 0;
-    //    ProtocolBytes proto = (ProtocolBytes)protocol;
-    //    string protoName = proto.GetString(start, ref start);
-    //    int winTeam = proto.GetInt(start, ref start);
-    //    //弹出胜负面板
-    //    string id = GameMgr.instance.id;
-    //    BattleTank bt = list[id];
-    //    if (bt.camp == winTeam)
-    //    {
-    //        PanelMgr.instance.OpenPanel<WinPanel>("", 1);
-    //    }
-    //    else
-    //    {
-    //        PanelMgr.instance.OpenPanel<WinPanel>("", 0);
-    //    }
-    //    //取消监听
-    //    NetMgr.srvConn.msgDist.DelListener("UpdateUnitInfo", RecvUpdateUnitInfo);
-    //    NetMgr.srvConn.msgDist.DelListener("Shooting", RecvShooting);
-    //    NetMgr.srvConn.msgDist.DelListener("Hit", RecvHit);
-    //    NetMgr.srvConn.msgDist.DelListener("Result", RecvResult);
-    //}
+    public void ArrivalTerminal()
+    {
+        if(arriveCheckPoitLst.Count == GameObject.FindGameObjectsWithTag("CheckPoint").Length)
+        {
+            BattleController.Instance.OnPlayerFinshGame(Time.time - startTime);
+        }
+        
+    }
 }

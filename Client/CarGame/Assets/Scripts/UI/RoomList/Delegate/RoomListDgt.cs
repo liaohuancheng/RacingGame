@@ -15,15 +15,15 @@ public class RoomListDgt : MonoBehaviour
     {
         get
         {
-            if (_instance == null)
-            {    //查找场景中是否已经存在单例
-                _instance = GameObject.FindObjectOfType<RoomListDgt>();
-                if (_instance == null)
-                {    //创建游戏对象然后绑定单例脚本
-                    GameObject go = new GameObject("Singleton");
-                    _instance = go.AddComponent<RoomListDgt>();
-                }
-            }
+            //if (_instance == null)
+            //{    //查找场景中是否已经存在单例
+            //    _instance = GameObject.FindObjectOfType<RoomListDgt>();
+            //    if (_instance == null)
+            //    {    //创建游戏对象然后绑定单例脚本
+            //        GameObject go = new GameObject("Singleton");
+            //        _instance = go.AddComponent<RoomListDgt>();
+            //    }
+            //}
             return _instance;
         }
 

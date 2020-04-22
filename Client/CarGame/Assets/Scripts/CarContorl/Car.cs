@@ -54,6 +54,8 @@ public class Car : MonoBehaviour
     private float lastRecvTime;
     private float timeInterval;
 
+    private bool canControll = true;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -69,12 +71,17 @@ public class Car : MonoBehaviour
         lastRot = transform.eulerAngles;
 
         frontRotTest = transform.rotation;
+        canControll = true;
     }
 
     private void Update()
     {
         if(ctrlType == CtrlType.player)
         {
+            if (!canControll)
+            {
+                return;
+            }
             usrControl.control();
             if(Time.time - lastSendTime > 0.1f)
             {
@@ -178,8 +185,6 @@ public class Car : MonoBehaviour
 
         if (isBrake)
         {
-
-
             wheelColliderRR.brakeTorque = brakeTorque;
             wheelColliderRL.brakeTorque = brakeTorque;
         }
@@ -259,5 +264,21 @@ public class Car : MonoBehaviour
         wheelFR.Rotate(wheelColliderFR.rpm * 360 / 60 * Time.deltaTime * Vector3.right);
         wheelRR.Rotate(wheelColliderRR.rpm * 360 / 60 * Time.deltaTime * Vector3.right);
         wheelRL.Rotate(wheelColliderRL.rpm * 360 / 60 * Time.deltaTime * Vector3.right);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "CheckPoint")
+        {
+            GameMgr.Instance.PassCheckPoint(other.gameObject);
+        }
+        else if(other.tag == "OverPoint")
+        {
+            if (canControll)
+            {
+                GameMgr.Instance.ArrivalTerminal();
+                canControll = false;
+            }
+        }
     }
 }

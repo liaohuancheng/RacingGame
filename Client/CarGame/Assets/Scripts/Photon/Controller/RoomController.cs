@@ -49,6 +49,13 @@ namespace Assets.Scripts.Photon.Controller
             PhotonEngine.Instance.SendRequest(OperationCode.Room, paramaters);
         }
 
+        public void GetRoomInfo()
+        {
+            Dictionary<byte, object> paramaters = new Dictionary<byte, object>();
+            ParameterTool.AddParameter(paramaters, ParamaterCode.RoomOperationCode, RoomOperationCode.GetRoomInfo, false);
+            PhotonEngine.Instance.SendRequest(OperationCode.Room, paramaters);
+        }
+
 
 
         public override void OnOperationResponse(OperationResponse operationResponse)
@@ -62,6 +69,10 @@ namespace Assets.Scripts.Photon.Controller
                     break;
                 case RoomOperationCode.ExitRoom:
                     GetRoomController.Instance.GetRoomLst();
+                    break;
+                case RoomOperationCode.GetRoomInfo:
+                    var user = ParameterTool.GetParameter<List<User>>(operationResponse.Parameters, ParamaterCode.UserLst);
+                    RoomListDgt.Instance.EnterSuccess(user);
                     break;
             }
         }
